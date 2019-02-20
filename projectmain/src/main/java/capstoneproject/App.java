@@ -19,12 +19,13 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+        testDBConnection();
     }
 
     /**
     * Demonstrates using the Speech API to transcribe an audio file.
     */
-    private void testSpeechToText() {
+    private static void testSpeechToText() {
         // Instantiates a client
         try {
             SpeechClient speechClient = SpeechClient.create();
@@ -60,5 +61,34 @@ public class App
         catch (Exception e) {
 
         }
+    }
+
+    private static void testDBConnection() {
+        String db_url = env.get("DATABASE_URL");
+        // Give the Database object a connection, fail if we cannot get one
+        try {
+            Class.forName("org.postgresql.Driver");
+            URI dbUri = new URI(db_url);
+            String username = dbUri.getUserInfo().split(":")[0];
+            String password = dbUri.getUserInfo().split(":")[1];
+            String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "sslmode=require";
+            Connection conn = DriverManager.getConnection(dbUrl, username, password);
+            if (conn == null) {
+                System.err.println("Error: DriverManager.getConnection() returned a null object");
+                return null;
+            }
+            db.mConnection = conn;
+        } catch (SQLException e) {
+            System.err.println("Error: DriverManager.getConnection() threw a SQLException");
+            e.printStackTrace();
+            return null;
+        } catch (ClassNotFoundException cnfe) {
+            System.out.println("Unable to find postgresql driver");
+            return null;
+        } catch (URISyntaxException s) {
+            System.out.println("URI Syntax Error");
+            return null;
+        }
+        System.out.println("Connection Successful");
     }
 }
