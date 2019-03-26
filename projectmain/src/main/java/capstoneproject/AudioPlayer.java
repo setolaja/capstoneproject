@@ -1,4 +1,4 @@
-package model;
+package capstoneproject;
 
 import java.io.File;
 import java.io.IOException;
