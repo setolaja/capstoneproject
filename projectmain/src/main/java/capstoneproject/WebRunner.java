@@ -11,9 +11,8 @@ import java.net.URLConnection;
 
 public class WebRunner {
     private final String APIKEY = "ee58613a61258127b50bce1cf101d68f";//weather API Key
-    public WebRunner(){
+    public WebRunner(){}
 
-    }
 
 
     public JSONObject weather(){
