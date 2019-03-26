@@ -1,0 +1,20 @@
+
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <constantqueries>  = (what is the time |
+                    what is the weather |
+                    what is my schedule |
+                    brief me the news |
+                    lehigh upcoming events |
+                    calculator |
+                    flip a coin);
+
+public <officehours> = (when is professor (spletzer | montella | loew | erle) office hours);
+public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
+public <lehighevents> = (when is (mountain hunk | relay for life | lehigh basketball));
