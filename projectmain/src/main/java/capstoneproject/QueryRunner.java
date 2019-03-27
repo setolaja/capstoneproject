@@ -19,6 +19,7 @@ public class QueryRunner {
         aRlist=new AbstractRunner[3];
         aRlist[0]=new LocalRunner();
         aRlist[1]=new WebRunner();
+        aRlist[2]=new SQLRunner();
     }
 
     public static QueryRunner getInstance(){
