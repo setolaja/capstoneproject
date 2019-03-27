@@ -10,20 +10,15 @@ import java.util.HashSet;
 * Singleton Design pattern for the overarching class that separates the types of queries
 */
 public class QueryRunner {
-    private LocalRunner locR;//runner for queries on local machine
-    private WebRunner wR;//runner for web queries
-
-
-    private final String[] LOCALQ = {"coin","random","time"};//different types of queries for local runner
-    private HashSet<String> localQueries;//put in a hash set for constant lookup time
+    private AbstractRunner[] aRlist;//list of the 3 runners for the different types of functions
 
 
     //singleton stuff
     private static final QueryRunner INSTANCE = new QueryRunner();
     private QueryRunner(){
-        wR=new WebRunner();
-        locR = new LocalRunner();
-        localQueries=new HashSet<>(Arrays.asList(LOCALQ));
+        aRlist=new AbstractRunner[3];
+        aRlist[0]=new LocalRunner();
+        aRlist[1]=new WebRunner();
     }
 
     public static QueryRunner getInstance(){
@@ -31,12 +26,13 @@ public class QueryRunner {
     }
     //end of singleton stuff
 
-    public JSONObject output(String input){
-        if(localQueries.contains(input)){
-            return locR.returnable(input);
-        }
-        else if(input.equalsIgnoreCase("weather")){
-            return wR.weather();
+
+    //this is what i'm gonna use
+    public JSONObject nlpTransform(String input){
+        for(int i=0;i<aRlist.length;i++){
+            if(aRlist[i].contains(input)){
+                return aRlist[i].response();
+            }
         }
         return null;
     }

@@ -8,10 +8,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Arrays;
+import java.util.HashSet;
 
-public class WebRunner {
+public class WebRunner extends AbstractRunner{
     private final String APIKEY = "ee58613a61258127b50bce1cf101d68f";//weather API Key
-    public WebRunner(){}
+
+    private final String[] QUERIES = {"weather"};
+    public WebRunner(){
+        types=new HashSet<>(Arrays.asList(QUERIES));
+    }
 
 
 
@@ -68,5 +74,10 @@ public class WebRunner {
         System.out.println(data);
         System.out.println();
         return toReturn;
+    }
+
+    @Override
+    public JSONObject response() {
+        return null;
     }
 }
