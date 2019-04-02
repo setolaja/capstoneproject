@@ -8,6 +8,14 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
 import javax.sound.sampled.AudioInputStream;
 
 import marytts.LocalMaryInterface;
@@ -18,10 +26,7 @@ import marytts.modules.synthesis.Voice;
 import marytts.signalproc.effects.AudioEffect;
 import marytts.signalproc.effects.AudioEffects;
 
-/**
- * @author GOXR3PLUS
- *
- */
+
 public class TextToSpeech {
 
     private AudioPlayer tts;
@@ -37,6 +42,9 @@ public class TextToSpeech {
         } catch (MaryConfigurationException ex) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, ex);
         }
+        getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
+        setVoice("cmu-slt-hsmm");
+
     }
 
     //----------------------GENERAL METHODS---------------------------------------------------//
@@ -127,6 +135,38 @@ public class TextToSpeech {
      */
     public void setVoice(String voice) {
         marytts.setVoice(voice);
+    }
+
+    public static String cannedResponse(JSONObject query){
+
+        String response = "";
+        if(query == null){
+            System.out.print("Invalid Query Type");
+        }
+
+        //ArrayList<JSONObject> responseList = (ArrayList<JSONObject>) query.get("response");
+         switch (query.get("type").toString()){
+             case "Hello World":
+                 response += "The weather is 34 degrees. It is also sunny, but might rain later";
+                 break;
+
+             case "weather":
+                 JSONObject resp = (JSONObject)query.get("response");
+                 response += "Right now in " + resp.get("location") +", it is " + resp.get("temp") + "degrees and " + resp.get("weather") + ".";
+
+                 break;
+
+             case "time":
+                 response += "The time is" + query.get("response") + ".";
+                 break;
+
+             case "coinflip":
+                 response += query.get("response");
+                 break;
+
+         }
+        return response;
+
     }
 
 }
