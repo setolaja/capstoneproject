@@ -41,7 +41,7 @@ public class LocalRunner extends AbstractRunner{
     }
 
     @Override
-    public JSONObject response() {
-        return null;
+    public JSONObject response(String input) {
+        return returnable(input);
     }
 }

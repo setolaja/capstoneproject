@@ -79,7 +79,7 @@ public class WebRunner extends AbstractRunner{
     }
 
     @Override
-    public JSONObject response() {
+    public JSONObject response(String input) {
         return weather();
     }
 }

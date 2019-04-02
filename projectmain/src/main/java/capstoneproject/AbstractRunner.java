@@ -11,5 +11,5 @@ public abstract class AbstractRunner {
         return types.contains(st);
     }
 
-    public abstract JSONObject response();
+    public abstract JSONObject response(String input);
 }
