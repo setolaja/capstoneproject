@@ -80,6 +80,6 @@ public class WebRunner extends AbstractRunner{
 
     @Override
     public JSONObject response() {
-        return null;
+        return weather();
     }
 }
