@@ -32,7 +32,7 @@ public class QueryRunner {
     public JSONObject nlpTransform(String input){
         for(int i=0;i<aRlist.length;i++){
             if(aRlist[i].contains(input)){
-                return aRlist[i].response();
+                return aRlist[i].response(input);
             }
         }
         return null;
