@@ -67,9 +67,11 @@ public class WebRunner extends AbstractRunner{
         String temp=p1[1].split("\"temp\":")[1].split("\\.")[0];
         int theTemp=Integer.parseInt(temp)-273;
         theTemp=(int)(theTemp*1.8) + 32;
+        String location=data.split("\"name\":\"")[1].split("\",\"")[0];
 
         wtrData.put("weather",theWeather);
         wtrData.put("temp",theTemp);
+        wtrData.put("location",location);
         toReturn.put("response",wtrData);
         System.out.println(data);
         System.out.println();
