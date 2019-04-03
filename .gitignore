@@ -1,3 +1,5 @@
 .vscode/*
 .DS_Store
 .idea/*
+projectmain/projectmain.iml
+projectmain/target/*

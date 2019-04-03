@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\TextToSpeech.java
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\App.java
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\LocalRunner.java
@@ -6,3 +7,13 @@ C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capst
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\SpeechRecognizerMain.java
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\AudioPlayer.java
 C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain\src\main\java\capstoneproject\WebRunner.java
+=======
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\App.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\AudioPlayer.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\LocalRunner.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\TextToSpeech.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\SpeechRecognizerMain.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\Database.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\Parser.java
+C:\Users\tjfog\IdeaProjects\capstoneproject\projectmain\src\main\java\capstoneproject\WebRunner.java
+>>>>>>> d229bf9255f18b73912e46d6b1f49eed19df75a4

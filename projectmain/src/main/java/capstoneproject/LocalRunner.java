@@ -1,7 +1,15 @@
+package capstoneproject;
+
 import org.json.simple.JSONObject;
 
-public class LocalRunner {
-    public LocalRunner(){}
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class LocalRunner extends AbstractRunner{
+    private final String[] LOCALQ = {"coin","random","time"};
+    public LocalRunner(){
+        types=new HashSet<>(Arrays.asList(LOCALQ));
+    }
 
     public JSONObject returnable(String data){
         JSONObject toReturn = new JSONObject();
@@ -30,5 +38,10 @@ public class LocalRunner {
 
         }
         return null;
+    }
+
+    @Override
+    public JSONObject response(String input) {
+        return returnable(input);
     }
 }

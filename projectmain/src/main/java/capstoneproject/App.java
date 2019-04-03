@@ -15,13 +15,12 @@ import marytts.signalproc.effects.RobotiserEffect;
 import marytts.signalproc.effects.StadiumEffect;
 import marytts.signalproc.effects.VocalTractLinearScalerEffect;
 import marytts.signalproc.effects.VolumeEffect;
+import org.json.simple.JSONObject;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
-
         // get the Postgres configuration from the environment
         // Map<String, String> env = System.getenv();
         // String ip = env.get("POSTGRES_IP");
@@ -35,36 +34,15 @@ public class App
         // if (db == null)
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
-        new SpeechRecognizerMain();
+        //new SpeechRecognizerMain();
+        QueryRunner qr = QueryRunner.getInstance();
 
-        //testTextToSpeech();
-    }
-
-    public static void testTextToSpeech() {
-        //Create TextToSpeech
+        JSONObject queryResponse = qr.nlpTransform("weather");
         TextToSpeech tts = new TextToSpeech();
+        tts.speak(tts.cannedResponse(queryResponse),2,false,true);
 
-        //=========================================================================
-        //======================= Print available AUDIO EFFECTS ====================
-        //=========================================================================
-
-        //Print all the available audio effects
-        tts.getAudioEffects().stream().forEach(audioEffect -> {
-            System.out.println("-----Name-----");
-            System.out.println(audioEffect.getName());
-            System.out.println("-----Examples-----");
-            System.out.println(audioEffect.getExampleParameters());
-            System.out.println("-----Help Text------");
-            System.out.println(audioEffect.getHelpText() + "\n\n");
-
-        });
-
-        //=========================================================================
-        //========================= Print available voices =========================
-        //=========================================================================
-
-        //Print all the available voices
-        tts.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
     }
+
+
 
 }

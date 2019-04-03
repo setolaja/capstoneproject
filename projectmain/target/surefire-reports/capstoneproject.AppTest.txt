@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: capstoneproject.AppTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+>>>>>>> d229bf9255f18b73912e46d6b1f49eed19df75a4

@@ -1,3 +1,5 @@
+package capstoneproject;
+
 import org.json.simple.JSONObject;
 
 import java.io.BufferedReader;
@@ -6,12 +8,17 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Arrays;
+import java.util.HashSet;
 
-public class WebRunner {
+public class WebRunner extends AbstractRunner{
     private final String APIKEY = "ee58613a61258127b50bce1cf101d68f";//weather API Key
-    public WebRunner(){
 
+    private final String[] QUERIES = {"weather"};
+    public WebRunner(){
+        types=new HashSet<>(Arrays.asList(QUERIES));
     }
+
 
 
     public JSONObject weather(){
@@ -60,12 +67,19 @@ public class WebRunner {
         String temp=p1[1].split("\"temp\":")[1].split("\\.")[0];
         int theTemp=Integer.parseInt(temp)-273;
         theTemp=(int)(theTemp*1.8) + 32;
+        String location=data.split("\"name\":\"")[1].split("\",\"")[0];
 
         wtrData.put("weather",theWeather);
         wtrData.put("temp",theTemp);
+        wtrData.put("location",location);
         toReturn.put("response",wtrData);
         System.out.println(data);
         System.out.println();
         return toReturn;
+    }
+
+    @Override
+    public JSONObject response(String input) {
+        return weather();
     }
 }
