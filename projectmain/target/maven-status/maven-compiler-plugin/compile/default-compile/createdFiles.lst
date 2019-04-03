@@ -1,7 +1,8 @@
 capstoneproject\Database$RowData.class
-capstoneproject\Main.class
+WebRunner.class
 capstoneproject\AudioPlayer$Status.class
 capstoneproject\Database.class
 capstoneproject\AudioPlayer.class
 capstoneproject\SpeechRecognizerMain.class
 capstoneproject\TextToSpeech.class
+LocalRunner.class

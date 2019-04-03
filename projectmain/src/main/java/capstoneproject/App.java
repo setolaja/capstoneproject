@@ -35,9 +35,9 @@ public class App
         // if (db == null)
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
-        //new SpeechRecognizerMain();
+        new SpeechRecognizerMain();
 
-        testTextToSpeech();
+        //testTextToSpeech();
     }
 
     public static void testTextToSpeech() {
