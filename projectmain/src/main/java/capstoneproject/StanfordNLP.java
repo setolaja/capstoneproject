@@ -59,7 +59,7 @@ public class StanfordNLP {
             } else if (Sentance[i].contains("Time") || Sentance[i].contains("time")) {
                 retval.Query = NLPinfo.Queries.Time;
             } else if (Sentance[i].contains("Random") || Sentance[i].contains("random")) {
-                retval.Query = NLPinfo.Queries.RanNum;
+                retval.Query = NLPinfo.Queries.random;
             } else {
                 retval.Query = NLPinfo.Queries.NULL;
             }

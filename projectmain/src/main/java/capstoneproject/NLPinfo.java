@@ -13,7 +13,7 @@ public class NLPinfo {
         Levent,
         Calc,
         Bclose,
-        RanNum,
+        random,
         NULL
     }
 
