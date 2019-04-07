@@ -11,7 +11,7 @@ public class LocalRunner extends AbstractRunner{
         types=new HashSet<>(Arrays.asList(LOCALQ));
     }
 
-    public JSONObject returnable(String data){
+    public JSONObject returnable(String data, String info){
         JSONObject toReturn = new JSONObject();
         switch(data)
         {
@@ -41,7 +41,7 @@ public class LocalRunner extends AbstractRunner{
     }
 
     @Override
-    public JSONObject response(String input) {
-        return returnable(input);
+    public JSONObject response(NLPinfo input) {
+        return returnable(input.getQuery().toString().toLowerCase(), input.RelevantInfo);
     }
 }
