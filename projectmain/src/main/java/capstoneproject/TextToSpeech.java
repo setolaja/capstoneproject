@@ -42,8 +42,9 @@ public class TextToSpeech {
         } catch (MaryConfigurationException ex) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, ex);
         }
-        //getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
+        getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
         setVoice("cmu-slt-hsmm");
+        //dfki-poppy-hsmm
 
     }
 
@@ -147,7 +148,7 @@ public class TextToSpeech {
         switch (query.get("type").toString()){
             case "weather": {
                 JSONObject resp = (JSONObject) query.get("response");
-                response += "Right now in " + resp.get("location") + ", it is " + resp.get("temp") + " degrees and " + resp.get("weather") + ".";
+                response += "Right now in " + resp.get("location") + ", it is " + resp.get("temp") + " degrees and there are " + resp.get("weather") + ".";
                 break;
             }
 
