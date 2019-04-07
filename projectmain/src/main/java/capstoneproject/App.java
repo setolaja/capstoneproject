@@ -43,7 +43,7 @@ public class App
 
         QueryRunner qr = QueryRunner.getInstance();
 
-        JSONObject queryResponse = qr.nlpTransform(info.getQuery().toString().toLowerCase());
+        JSONObject queryResponse = qr.nlpTransform(info);
         System.out.println(queryResponse);
         /*TextToSpeech tts = new TextToSpeech();
         tts.speak(tts.cannedResponse(queryResponse),2,false,true);*/
