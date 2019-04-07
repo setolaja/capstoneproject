@@ -15,6 +15,9 @@ import edu.cmu.sphinx.api.LiveSpeechRecognizer;
 import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.result.WordResult;
 
+import org.json.simple.JSONObject;
+
+
 public class SpeechRecognizerMain {
 	
 	// Necessary
@@ -68,6 +71,9 @@ public class SpeechRecognizerMain {
 		
 		// Configuration
 		Configuration configuration = new Configuration();
+
+		// Set initial speech recognition result to blank
+		speechRecognitionResult = "";
 		
 		// Load model from the jar
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
@@ -154,7 +160,7 @@ public class SpeechRecognizerMain {
 								
 								//Call the appropriate method 
 								makeDecision(speechRecognitionResult, speechResult.getWords());
-								
+
 							}
 						} else {
 							logger.log(Level.INFO, "Ingoring Speech Recognition Results...");
@@ -233,15 +239,21 @@ public class SpeechRecognizerMain {
 	 * @param speechWords
 	 */
 	public void makeDecision(String speech , List<WordResult> speechWords) {
-
 		if (speech.equalsIgnoreCase("stop")) {
 			speechRecognizerThreadRunning = false;
 		}
 		else {
-			//call dereks costructor and method
-			//speechRecognizerThreadRunning = false;
+			StanfordNLP nl = new StanfordNLP();
+			nl.GetInputText(speech);
+	
+			NLPinfo info = nl.OutputNLPinfo();
+			System.out.println(info.getQuery());
+	
+			QueryRunner qr = QueryRunner.getInstance();
+	
+			JSONObject queryResponse = qr.nlpTransform(info);
+			System.out.println(queryResponse);
 		}
-		System.out.println(speech);
 	}
 	
 	public boolean getIgnoreSpeechRecognitionResults() {

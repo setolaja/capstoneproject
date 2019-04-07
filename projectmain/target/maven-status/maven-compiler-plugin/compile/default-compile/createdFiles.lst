@@ -5,16 +5,11 @@ capstoneproject\Parser.class
 capstoneproject\AudioPlayer$Status.class
 capstoneproject\Database.class
 capstoneproject\LocalRunner.class
-<<<<<<< HEAD
-capstoneproject\AudioPlayer.class
-capstoneproject\SQLRunner.class
-=======
 capstoneproject\StanfordNLP.class
 capstoneproject\AudioPlayer.class
 capstoneproject\NLPinfo.class
 capstoneproject\SQLRunner.class
 capstoneproject\NLPinfo$Queries.class
->>>>>>> 7c77ca94040fbd60bcdaa62fca2f961717ed60d9
 capstoneproject\AbstractRunner.class
 capstoneproject\QueryRunner.class
 capstoneproject\SpeechRecognizerMain.class
