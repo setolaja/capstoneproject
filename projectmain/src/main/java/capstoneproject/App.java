@@ -35,11 +35,18 @@ public class App
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
         //new SpeechRecognizerMain();
+       StanfordNLP nl = new StanfordNLP();
+       nl.GetInputText("flip a coin");
+
+       NLPinfo info = nl.OutputNLPinfo();
+       System.out.println(info.getQuery());
+
         QueryRunner qr = QueryRunner.getInstance();
 
-        JSONObject queryResponse = qr.nlpTransform("weather");
-        TextToSpeech tts = new TextToSpeech();
-        tts.speak(tts.cannedResponse(queryResponse),2,false,true);
+        JSONObject queryResponse = qr.nlpTransform(info);
+        System.out.println(queryResponse);
+        /*TextToSpeech tts = new TextToSpeech();
+        tts.speak(tts.cannedResponse(queryResponse),2,false,true);*/
 
     }
 
