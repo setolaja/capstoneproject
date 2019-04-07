@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Arrays;
 import java.util.List;
 
+import java.io.*;
 import marytts.signalproc.effects.JetPilotEffect;
 import marytts.signalproc.effects.LpcWhisperiserEffect;
 import marytts.signalproc.effects.RobotiserEffect;
@@ -19,7 +20,7 @@ import org.json.simple.JSONObject;
 
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
         // get the Postgres configuration from the environment
         // Map<String, String> env = System.getenv();
@@ -36,15 +37,35 @@ public class App
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
         //new SpeechRecognizerMain();
        StanfordNLP nl = new StanfordNLP();
-       nl.GetInputText("flip a coin");
+       QueryRunner qr = QueryRunner.getInstance();
+
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.println("enter an input");
+       String input=br.readLine();
+       while(!input.equalsIgnoreCase("exit")){
+           if(!input.equalsIgnoreCase("hey lehigh")){
+               input=br.readLine();
+               continue;
+           }
+           System.out.println("listening:");
+           input=br.readLine();
+           nl.GetInputText(input);
+           NLPinfo nli = nl.OutputNLPinfo();
+           JSONObject query = qr.nlpTransform(nli);
+           System.out.println(query);
+           System.out.println("enter an input");
+           input = br.readLine();
+       }
+
+       /*nl.GetInputText("flip a coin");
 
        NLPinfo info = nl.OutputNLPinfo();
        System.out.println(info.getQuery());
 
-        QueryRunner qr = QueryRunner.getInstance();
+
 
         JSONObject queryResponse = qr.nlpTransform(info);
-        System.out.println(queryResponse);
+        System.out.println(queryResponse);*/
         /*TextToSpeech tts = new TextToSpeech();
         tts.speak(tts.cannedResponse(queryResponse),2,false,true);*/
 
