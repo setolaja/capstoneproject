@@ -73,13 +73,13 @@ public class WebRunner extends AbstractRunner{
         wtrData.put("temp",theTemp);
         wtrData.put("location",location);
         toReturn.put("response",wtrData);
-        System.out.println(data);
-        System.out.println();
+       // System.out.println(data);
+        //System.out.println();
         return toReturn;
     }
 
     @Override
-    public JSONObject response(String input) {
+    public JSONObject response(NLPinfo input) {
         return weather();
     }
 }

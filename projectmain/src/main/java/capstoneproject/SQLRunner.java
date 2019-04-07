@@ -7,7 +7,7 @@ public class SQLRunner extends AbstractRunner {
     public SQLRunner(){}
 
     @Override
-    public JSONObject response(String input) {
+    public JSONObject response(NLPinfo input) {
         return null;
     }
 }
