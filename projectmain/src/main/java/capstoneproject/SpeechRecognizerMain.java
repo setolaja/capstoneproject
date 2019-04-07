@@ -100,9 +100,9 @@ public class SpeechRecognizerMain {
 		// recognizer.startRecognition(true);
 		
 		//Check if needed resources are available
-		startResourcesThread();
+		//startResourcesThread();
 		//Start speech recognition thread
-		startSpeechRecognition();
+		//startSpeechRecognition();
 	}
 	
 	//-----------------------------------------------------------------------------------------------
@@ -113,8 +113,9 @@ public class SpeechRecognizerMain {
 	public synchronized void startSpeechRecognition() {
 		
 		//Check lock
-		if (speechRecognizerThreadRunning)
+		if (speechRecognizerThreadRunning) {
 			logger.log(Level.INFO, "Speech Recognition Thread already running...\n");
+		}
 		else
 			//Submit to ExecutorService
 			eventsExecutorService.submit(() -> {
@@ -140,8 +141,9 @@ public class SpeechRecognizerMain {
 						if (!ignoreSpeechRecognitionResults) {
 							
 							//Check the result
-							if (speechResult == null)
+							if (speechResult == null) {
 								logger.log(Level.INFO, "I can't understand what you said.\n");
+							}
 							else {
 								
 								//Get the hypothesis
@@ -154,8 +156,9 @@ public class SpeechRecognizerMain {
 								makeDecision(speechRecognitionResult, speechResult.getWords());
 								
 							}
-						} else
+						} else {
 							logger.log(Level.INFO, "Ingoring Speech Recognition Results...");
+						}
 						
 					}
 				} catch (Exception ex) {
@@ -164,7 +167,6 @@ public class SpeechRecognizerMain {
 				}
 				
 				logger.log(Level.INFO, "SpeechThread has exited...");
-				
 			});
 	}
 	
@@ -195,8 +197,9 @@ public class SpeechRecognizerMain {
 	public void startResourcesThread() {
 		
 		//Check lock
-		if (resourcesThreadRunning)
+		if (resourcesThreadRunning) {
 			logger.log(Level.INFO, "Resources Thread already running...\n");
+		}
 		else
 			//Submit to ExecutorService
 			eventsExecutorService.submit(() -> {
@@ -209,8 +212,9 @@ public class SpeechRecognizerMain {
 					while (true) {
 						
 						//Is the Microphone Available
-						if (!AudioSystem.isLineSupported(Port.Info.MICROPHONE))
+						if (!AudioSystem.isLineSupported(Port.Info.MICROPHONE)) {
 							logger.log(Level.INFO, "Microphone is not available.\n");
+						}
 						
 						// Sleep some period
 						Thread.sleep(350);
@@ -229,9 +233,15 @@ public class SpeechRecognizerMain {
 	 * @param speechWords
 	 */
 	public void makeDecision(String speech , List<WordResult> speechWords) {
-		
+
+		if (speech.equalsIgnoreCase("stop")) {
+			speechRecognizerThreadRunning = false;
+		}
+		else {
+			//call dereks costructor and method
+			//speechRecognizerThreadRunning = false;
+		}
 		System.out.println(speech);
-		
 	}
 	
 	public boolean getIgnoreSpeechRecognitionResults() {
@@ -242,12 +252,7 @@ public class SpeechRecognizerMain {
 		return speechRecognizerThreadRunning;
 	}
 	
-	/**
-	 * Main Method
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		new SpeechRecognizerMain();
+	public String getSpeechRecognitionResult() {
+		return speechRecognitionResult;
 	}
 }

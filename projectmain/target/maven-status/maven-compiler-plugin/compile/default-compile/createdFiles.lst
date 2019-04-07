@@ -1,13 +1,13 @@
 capstoneproject\App.class
 capstoneproject\Database$RowData.class
-WebRunner.class
-<<<<<<< HEAD
-=======
+capstoneproject\WebRunner.class
 capstoneproject\Parser.class
->>>>>>> d229bf9255f18b73912e46d6b1f49eed19df75a4
 capstoneproject\AudioPlayer$Status.class
 capstoneproject\Database.class
+capstoneproject\LocalRunner.class
 capstoneproject\AudioPlayer.class
+capstoneproject\SQLRunner.class
+capstoneproject\AbstractRunner.class
+capstoneproject\QueryRunner.class
 capstoneproject\SpeechRecognizerMain.class
 capstoneproject\TextToSpeech.class
-LocalRunner.class

@@ -34,12 +34,15 @@ public class App
         // if (db == null)
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
-        //new SpeechRecognizerMain();
-        QueryRunner qr = QueryRunner.getInstance();
+        SpeechRecognizerMain main = new SpeechRecognizerMain();
+        main.startResourcesThread();
+        main.startSpeechRecognition();
+        System.out.println("Output: " + main.getSpeechRecognitionResult());
+        //QueryRunner qr = QueryRunner.getInstance();
 
-        JSONObject queryResponse = qr.nlpTransform("weather");
-        TextToSpeech tts = new TextToSpeech();
-        tts.speak(tts.cannedResponse(queryResponse),2,false,true);
+        //JSONObject queryResponse = qr.nlpTransform("weather");
+        //TextToSpeech tts = new TextToSpeech();
+        //tts.speak(tts.cannedResponse(queryResponse),2,false,true);
 
     }
 
