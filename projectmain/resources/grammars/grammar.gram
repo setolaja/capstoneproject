@@ -19,4 +19,4 @@ public <officehours> = (when is professor (spletzer | montella | loew | erle) of
 public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
 public <lehighevents> = (when is (mountain hunk | relay for life | lehigh basketball));
 
-public <stopwords> = (stop);
+public <wakewords> = (hey lehigh);

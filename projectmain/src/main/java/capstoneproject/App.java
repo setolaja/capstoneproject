@@ -48,9 +48,8 @@ public class App
 
         //JSONObject queryResponse = qr.nlpTransform(info);
         //System.out.println(queryResponse);
-        TextToSpeech tts = new TextToSpeech();
-        tts.speak(tts.cannedResponse(queryResponse),2,false,true);
-
+        //TextToSpeech tts = new TextToSpeech();
+        //tts.speak(tts.cannedResponse(queryResponse),2,false,true);
     }
 
 

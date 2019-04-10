@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="capstoneproject.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="capstoneproject.AppTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
     <property name="java.vm.version" value="25.181-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\setolaja\Desktop\cse280\capstoneproject\projectmain"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\setolaja\Desktop\CSE280\capstoneproject\projectmain"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -65,5 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="capstoneproject.AppTest" name="testApp" time="0.004"/>
+  <testcase classname="capstoneproject.AppTest" name="testApp" time="0.001"/>
 </testsuite>

@@ -51,8 +51,14 @@ public class SpeechRecognizerMain {
 	 * Checks if the resources Thread is already running
 	 */
 	private boolean resourcesThreadRunning;
+
+	//Checks to see if wake word or stop word has been said
+	private boolean wakeFlag;
+	private boolean stopFlag;
 	
-	//---
+	//Class declarations
+	private StanfordNLP nl;
+	private TextToSpeech tts;
 	
 	/**
 	 * This executor service is used in order the playerState events to be executed in an order
@@ -72,8 +78,16 @@ public class SpeechRecognizerMain {
 		// Configuration
 		Configuration configuration = new Configuration();
 
+		//Construct needed classes for pipeline
+		nl = new StanfordNLP();
+		tts = new TextToSpeech();
+
 		// Set initial speech recognition result to blank
 		speechRecognitionResult = "";
+
+		//Set wake word and stop word to false
+		wakeFlag = false;
+		stopFlag = false;
 		
 		// Load model from the jar
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
@@ -93,7 +107,7 @@ public class SpeechRecognizerMain {
 		
 		// Grammar
 		configuration.setGrammarPath("./resources/grammars");
-		configuration.setGrammarName("grammar");
+		configuration.setGrammarName("demogrammar");
 		configuration.setUseGrammar(true);
 		
 		try {
@@ -132,6 +146,12 @@ public class SpeechRecognizerMain {
 				
 				//Start Recognition
 				recognizer.startRecognition(true);
+
+				//This runs Derek's and TJ's piece to initiliaze so the program runs faster
+				nl.GetInputText("what is the time");
+				NLPinfo info = nl.OutputNLPinfo();
+				QueryRunner qr = QueryRunner.getInstance();
+				JSONObject queryResponse = qr.nlpTransform(info);
 				
 				//Information			
 				logger.log(Level.INFO, "You can start to speak...\n");
@@ -154,12 +174,24 @@ public class SpeechRecognizerMain {
 								
 								//Get the hypothesis
 								speechRecognitionResult = speechResult.getHypothesis();
+
+								//Check if input is wake word or stop word
+								if (speechRecognitionResult.equals("hey lehigh")) {
+									System.out.println("Wake word detected.");
+									wakeFlag = true;
+								}
+
+								if (speechRecognitionResult.equals("stop listening")) {
+									System.out.println("Stop word detected.");
+									stopFlag = true;
+								}
 								
-								//You said?
-								System.out.println("You said: [" + speechRecognitionResult + "]\n");
-								
-								//Call the appropriate method 
-								makeDecision(speechRecognitionResult, speechResult.getWords());
+								//Call the appropriate method
+								if (wakeFlag || stopFlag) {
+									System.out.println("You said: [" + speechRecognitionResult + "]\n");
+
+									makeDecision(speechRecognitionResult, speechResult.getWords());
+								}
 
 							}
 						} else {
@@ -174,6 +206,7 @@ public class SpeechRecognizerMain {
 				
 				logger.log(Level.INFO, "SpeechThread has exited...");
 			});
+			eventsExecutorService.shutdown();
 	}
 	
 	/**
@@ -239,11 +272,19 @@ public class SpeechRecognizerMain {
 	 * @param speechWords
 	 */
 	public void makeDecision(String speech , List<WordResult> speechWords) {
-		if (speech.equalsIgnoreCase("stop")) {
+		//for (int i = 0; i < speechWords.size(); i++) {
+		//	System.out.println(speechWords.get(i));
+		//}
+		if (speech.equalsIgnoreCase("stop listening")) {
 			speechRecognizerThreadRunning = false;
 		}
+		else if (speech.equalsIgnoreCase("<unk>")) {
+			//do nothing
+		}
+		else if (speech.equalsIgnoreCase("hey lehigh")) {
+			//do nothing
+		}
 		else {
-			StanfordNLP nl = new StanfordNLP();
 			nl.GetInputText(speech);
 	
 			NLPinfo info = nl.OutputNLPinfo();
@@ -253,6 +294,10 @@ public class SpeechRecognizerMain {
 	
 			JSONObject queryResponse = qr.nlpTransform(info);
 			System.out.println(queryResponse);
+
+			tts.speak(tts.cannedResponse(queryResponse),2,false,true);
+
+			wakeFlag = false;
 		}
 	}
 	
