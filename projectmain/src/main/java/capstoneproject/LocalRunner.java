@@ -35,7 +35,9 @@ public class LocalRunner extends AbstractRunner{
                 theTime=theTime.substring(0,5);
                 toReturn.put("response",theTime);
                 return toReturn;
-
+            case "startup":
+                toReturn.put("type","startup");
+                toReturn.put("response","hello");
         }
         return null;
     }
