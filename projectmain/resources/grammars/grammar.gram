@@ -18,3 +18,5 @@ public <constantqueries>  = (what is the time |
 public <officehours> = (when is professor (spletzer | montella | loew | erle) office hours);
 public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
 public <lehighevents> = (when is (mountain hunk | relay for life | lehigh basketball));
+
+public <wakewords> = (hey lehigh);

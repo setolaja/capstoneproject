@@ -1,0 +1,17 @@
+
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar demogrammar;
+
+public <constantqueries>  = (what is the time |
+                    what is the weather |
+                    give me a random number|
+                    flip a coin);
+
+public <stopwords> = (stop listening);
+
+public <wakewords> = (hey lehigh);

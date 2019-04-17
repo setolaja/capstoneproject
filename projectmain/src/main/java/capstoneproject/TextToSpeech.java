@@ -157,6 +157,10 @@ public class TextToSpeech {
                 break;
             }
 
+            case "calc": {
+                response += query.get("response");
+            }
+
             case "time": {
                 response += "The time is " + query.get("response") + ".";
                 break;
