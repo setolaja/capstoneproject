@@ -55,6 +55,7 @@ public class LocalRunner extends AbstractRunner{
 
         JSONObject toReturn = new JSONObject();
         toReturn.put("type", "calc");
+        toReturn.put("query",info);
         String dubOp=null;
         String unOp=null;
         if(info.contains("plus")){
