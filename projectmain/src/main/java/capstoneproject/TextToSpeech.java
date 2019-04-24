@@ -158,7 +158,7 @@ public class TextToSpeech {
             }
 
             case "calc": {
-                response = query.get("response") + ".";
+                response = query.get("query") + "is" + query.get("response").toString() + ".";
                 break;
             }
 
@@ -173,7 +173,7 @@ public class TextToSpeech {
             }
 
             case "random": {
-                response = query.get("response") + ".";
+                response = query.get("response").toString() + ".";
                 break;
             }
 
