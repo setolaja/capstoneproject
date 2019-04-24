@@ -42,8 +42,9 @@ public class TextToSpeech {
         } catch (MaryConfigurationException ex) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, ex);
         }
-        //getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
+        getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
         setVoice("cmu-slt-hsmm");
+        //dfki-poppy-hsmm
 
     }
 
@@ -147,22 +148,37 @@ public class TextToSpeech {
         switch (query.get("type").toString()){
             case "weather": {
                 JSONObject resp = (JSONObject) query.get("response");
-                response += "Right now in " + resp.get("location") + ", it is " + resp.get("temp") + " degrees and " + resp.get("weather") + ".";
+                response = "Right now in " + resp.get("location") + ", it is " + resp.get("temp") + " degrees and there are " + resp.get("weather") + ".";
                 break;
             }
 
             case "coin": {
-                response += query.get("response");
+                response = query.get("response") + ".";
+                break;
+            }
+
+            case "calc": {
+                response = query.get("response") + ".";
+                break;
+            }
+
+            case "startup": {
+                response = query.get("response") + ".";
                 break;
             }
 
             case "time": {
-                response += "The time is " + query.get("response") + ".";
+                response = "The time is " + query.get("response") + ".";
                 break;
             }
 
             case "random": {
-                response += query.get("response") + ".";
+                response = query.get("response") + ".";
+                break;
+            }
+
+            default: {
+                response = "I'm sorry, im not sure how to answer that.";
                 break;
             }
 

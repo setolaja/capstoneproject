@@ -36,39 +36,22 @@ public class App
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
         //new SpeechRecognizerMain();
-       StanfordNLP nl = new StanfordNLP();
-       QueryRunner qr = QueryRunner.getInstance();
+        SpeechRecognizerMain main = new SpeechRecognizerMain();
+        main.startResourcesThread();
+        main.startSpeechRecognition();
 
-       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-       System.out.println("enter an input");
-       String input=br.readLine();
-       while(!input.equalsIgnoreCase("exit")){
-           if(!input.equalsIgnoreCase("hey lehigh")){
-               input=br.readLine();
-               continue;
-           }
-           System.out.println("listening:");
-           input=br.readLine();
-           nl.GetInputText(input);
-           NLPinfo nli = nl.OutputNLPinfo();
-           JSONObject query = qr.nlpTransform(nli);
-           System.out.println(query);
-           System.out.println("enter an input");
-           input = br.readLine();
-       }
+        //StanfordNLP nl = new StanfordNLP();
+        //nl.GetInputText(result);
 
-       /*nl.GetInputText("flip a coin");
+        //NLPinfo info = nl.OutputNLPinfo();
+        //System.out.println(info.getQuery());
 
-       NLPinfo info = nl.OutputNLPinfo();
-       System.out.println(info.getQuery());
+        //QueryRunner qr = QueryRunner.getInstance();
 
-
-
-        JSONObject queryResponse = qr.nlpTransform(info);
-        System.out.println(queryResponse);*/
-        /*TextToSpeech tts = new TextToSpeech();
-        tts.speak(tts.cannedResponse(queryResponse),2,false,true);*/
-
+        //JSONObject queryResponse = qr.nlpTransform(info);
+        //System.out.println(queryResponse);
+        //TextToSpeech tts = new TextToSpeech();
+        //tts.speak(tts.cannedResponse(queryResponse),2,false,true);
     }
 
 
