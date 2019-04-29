@@ -1,5 +1,6 @@
 package capstoneproject;
 
+import net.didion.jwnl.data.Exc;
 import org.json.simple.JSONObject;
 
 import java.io.BufferedReader;
@@ -13,10 +14,72 @@ import java.util.HashSet;
 
 public class WebRunner extends AbstractRunner{
     private final String APIKEY = "ee58613a61258127b50bce1cf101d68f";//weather API Key
+    private final String NEWSKEY = "4111f4b77e6e4ad19c27a406590e77c1";//news API key
 
-    private final String[] QUERIES = {"weather"};
+    private final String[] QUERIES = {"weather", "news"};
     public WebRunner(){
         types=new HashSet<>(Arrays.asList(QUERIES));
+    }
+
+    public JSONObject news(){
+        URL newsUrl = null;
+        try {
+            newsUrl = new URL("https://newsapi.org/v2/top-headlines?country=us&apiKey="+NEWSKEY);
+        } catch (Exception e){
+            System.out.println("news: malformed url exception");
+            return null;
+        }
+
+        URLConnection newsCon=null;
+        try{
+            newsCon=newsUrl.openConnection();
+        }catch(Exception e){
+            System.out.println("cannot open connection: news");
+            return null;
+        }
+
+        InputStream nwsIs=null;
+        try{
+            nwsIs=newsCon.getInputStream();
+        }catch(Exception e){
+            System.out.println("cannot open input stream: news");
+            return null;
+        }
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(nwsIs));
+        String data = "";
+        String line = null;
+
+        try{
+            while((line=br.readLine())!=null){
+                data+=line;
+            }
+        }catch(Exception e){
+            System.out.println("could not read from writer: news");
+        }
+        System.out.println(data);
+        String[] titles = data.split("\"title\":");
+        String[] ret = new String[titles.length];
+        for(int i=0;i<titles.length;i++){
+            ret[i]=titles[i].split(",\"description")[0];
+            //System.out.println(ret[i]);
+        }
+        String[] descs = new String[5];
+        for(int i=0;i<descs.length;i++){
+            descs[i]=data.split("description\":\"")[i+1].split("\",\"url")[0];
+        }
+
+        String[] response = new String[5];
+        for(int i=1;i<6;i++){
+            response[i-1] = ret[i];
+        }
+
+        JSONObject retval = new JSONObject();
+        retval.put("type","news");
+        retval.put("response",response);
+        retval.put("description",descs);
+
+        return retval;
     }
 
 
@@ -80,6 +143,14 @@ public class WebRunner extends AbstractRunner{
 
     @Override
     public JSONObject response(NLPinfo input) {
-        return weather();
+        switch (input.getQuery().toString().toLowerCase()){
+            case "weather":
+                return weather();
+            case "news":
+                return news();
+        }
+
+
+        return null;
     }
 }
