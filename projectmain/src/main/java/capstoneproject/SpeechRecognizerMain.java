@@ -55,6 +55,13 @@ public class SpeechRecognizerMain {
 	//Checks to see if wake word or stop word has been said
 	private boolean wakeFlag;
 	private boolean stopFlag;
+	private boolean newsFlag;
+
+	//News looping index
+	private int newsIndex;
+
+	//Json Object
+	private JSONObject queryResponse;
 	
 	//Class declarations
 	private StanfordNLP nl;
@@ -88,6 +95,10 @@ public class SpeechRecognizerMain {
 		//Set wake word and stop word to false
 		wakeFlag = false;
 		stopFlag = false;
+		newsFlag = false;
+
+		//news index
+		newsIndex = 0;
 		
 		// Load model from the jar
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
@@ -107,7 +118,7 @@ public class SpeechRecognizerMain {
 		
 		// Grammar
 		configuration.setGrammarPath("./resources/grammars");
-		configuration.setGrammarName("demogrammar");
+		configuration.setGrammarName("grammar");
 		configuration.setUseGrammar(true);
 		
 		try {
@@ -279,12 +290,36 @@ public class SpeechRecognizerMain {
 			speechRecognizerThreadRunning = false;
 		}
 		else if (speech.equalsIgnoreCase("<unk>")) {
-			//do nothing
+			tts.speak("Im sorry I did not understand the question, can you repeat it?", 2, false, true);
 		}
 		else if (speech.equalsIgnoreCase("hey lehigh")) {
 			//do nothing
 		}
 		else {
+
+			if (newsFlag) {
+				if (speech.equalsIgnoreCase("next")) {
+					String[] responseArray = (String[]) queryResponse.get("response");
+					newsIndex++;
+					tts.speak(responseArray[newsIndex], 2, false, true);
+					tts.speak("Would you like to hear more, or hear the next headline?", 2, false, true);
+					// next headline
+				}
+				else if (speech.equalsIgnoreCase("more")) {
+					String[] responseArray = (String[]) queryResponse.get("description");
+					tts.speak(responseArray[newsIndex], 2, false, true);
+					tts.speak("Would you like to hear more, or hear the next headline?", 2, false, true);
+					// elaborate on headline
+					// would you like to hear more / next
+				}
+				else if (speech.equalsIgnoreCase("stop")) {
+					newsIndex = 0;
+					newsFlag = false;
+					// stop
+				}
+				return;
+			}
+
 			nl.GetInputText(speech);
 	
 			NLPinfo info = nl.OutputNLPinfo();
@@ -292,12 +327,18 @@ public class SpeechRecognizerMain {
 	
 			QueryRunner qr = QueryRunner.getInstance();
 	
-			JSONObject queryResponse = qr.nlpTransform(info);
+			queryResponse = qr.nlpTransform(info);
 			System.out.println(queryResponse);
 
 			tts.speak(tts.cannedResponse(queryResponse),2,false,true);
 
 			wakeFlag = false;
+
+			if (speech.equalsIgnoreCase("brief me the news")) {
+				newsFlag = true;
+				tts.speak("Would you like to hear more, or hear the next headline?", 2, false, true);
+				wakeFlag = true;
+			}
 		}
 	}
 	
