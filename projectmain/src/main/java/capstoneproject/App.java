@@ -21,35 +21,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        // get the Postgres configuration from the environment
-        // Map<String, String> env = System.getenv();
-        // String ip = env.get("POSTGRES_IP");
-        // String port = env.get("POSTGRES_PORT");
-        // String user = env.get("POSTGRES_USER");
-        // String pass = env.get("POSTGRES_PASS");
-
-        // Get a fully-configured connection to the database, or exit 
-        // immediately
-        // Database db = Database.getDatabase(ip, port, user, pass);
-        // if (db == null)
-        //     return;
-        //System.out.println("Working Dir: " + System.getProperty("user.dir"));
         SpeechRecognizerMain main = new SpeechRecognizerMain();
         main.startResourcesThread();
         main.startSpeechRecognition();
 
-        //StanfordNLP nl = new StanfordNLP();
-        //nl.GetInputText(result);
-
-        //NLPinfo info = nl.OutputNLPinfo();
-        //System.out.println(info.getQuery());
-
-        //QueryRunner qr = QueryRunner.getInstance();
-
-        //JSONObject queryResponse = qr.nlpTransform(info);
-        //System.out.println(queryResponse);
-        //TextToSpeech tts = new TextToSpeech();
-        //tts.speak(tts.cannedResponse(queryResponse),2,false,true);
+        
     }
 
 
