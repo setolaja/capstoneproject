@@ -64,6 +64,7 @@ public class WebRunner extends AbstractRunner{
             ret[i]=titles[i].split(",\"description")[0];
             //System.out.println(ret[i]);
         }
+        String desc = data.split("description\":\"")[1].split("\",\"url")[0];
 
         String[] response = new String[5];
         for(int i=1;i<6;i++){
@@ -73,6 +74,7 @@ public class WebRunner extends AbstractRunner{
         JSONObject retval = new JSONObject();
         retval.put("type","news");
         retval.put("response",response);
+        retval.put("description",desc);
 
         return retval;
     }
