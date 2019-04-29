@@ -20,8 +20,6 @@ import marytts.util.data.audio.StereoAudioInputStream;
 /**
  * A single Thread Audio Player Once used it has to be initialised again
  *
- * @author GOXR3PLUS
- *
  */
 public class AudioPlayer extends Thread {
 
@@ -41,7 +39,6 @@ public class AudioPlayer extends Thread {
     /**
      * The status of the player
      *
-     * @author GOXR3PLUS
      *
      */
     public enum Status {
@@ -205,9 +202,6 @@ public class AudioPlayer extends Thread {
      */
     public void setGain(float fGain) {
 
-        // if (line != null)
-        // System.out.println(((FloatControl)
-        // line.getControl(FloatControl.Type.MASTER_GAIN)).getValue())
 
         // Set the value
         gain = fGain;
@@ -217,9 +211,6 @@ public class AudioPlayer extends Thread {
             ( (FloatControl) line.getControl(FloatControl.Type.MASTER_GAIN) ).setValue((float) ( 20 * Math.log10(fGain <= 0.0 ? 0.0000 : fGain) ));
         // OR (Math.log(fGain == 0.0 ? 0.0000 : fGain) / Math.log(10.0))
 
-        // if (line != null)
-        // System.out.println(((FloatControl)
-        // line.getControl(FloatControl.Type.MASTER_GAIN)).getValue())
     }
 
     @Override
