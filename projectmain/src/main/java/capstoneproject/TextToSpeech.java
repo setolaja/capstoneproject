@@ -172,6 +172,12 @@ public class TextToSpeech {
                 break;
             }
 
+            case "news": {
+                String[] responseArray = (String[]) query.get("response");
+                response = responseArray[0] + ".";
+                break;
+            }
+
             case "random": {
                 response = query.get("response").toString() + ".";
                 break;
