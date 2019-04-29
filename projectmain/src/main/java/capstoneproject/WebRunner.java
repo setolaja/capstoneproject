@@ -57,7 +57,7 @@ public class WebRunner extends AbstractRunner{
         }catch(Exception e){
             System.out.println("could not read from writer: news");
         }
-        System.out.println(data);
+        //System.out.println(data);
         String[] titles = data.split("\"title\":");
         String[] ret = new String[titles.length];
         for(int i=0;i<titles.length;i++){
