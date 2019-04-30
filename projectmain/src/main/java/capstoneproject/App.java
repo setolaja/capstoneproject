@@ -22,8 +22,7 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-<<<<<<< HEAD
-=======
+
         // get the Postgres configuration from the environment
         // Map<String, String> env = System.getenv();
         // String ip = env.get("POSTGRES_IP");
@@ -38,7 +37,6 @@ public class App
         //     return;
         //System.out.println("Working Dir: " + System.getProperty("user.dir"));
         //new SpeechRecognizerMain();
->>>>>>> 49afd19d2f54a250587eaedde84dbc8ccedf4f02
         SpeechRecognizerMain main = new SpeechRecognizerMain();
         main.startResourcesThread();
         main.startSpeechRecognition();
