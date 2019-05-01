@@ -84,13 +84,14 @@ public class StanfordNLP {
                 System.out.println("1" + retval.Query.toString());
                 for(int j = 0; j < SentanceSize; j++)
                 {
-                    System.out.println("2" + Sentance[j]);
+                    retval.RelevantInfo = Sentance[3].substring(0,Sentance[3].length()-2);
+                    //System.out.println("2" + Sentance[j]);
                     //System.out.println(document.sentences().get(0).posTags().get(j));
-                    if(document.sentences().get(0).posTags().get(j).toString().equals("NNP"))
-                    {
+                    //if(document.sentences().get(0).posTags().get(j).toString().equals("NNP"))
+                    //{
                         //System.out.println("2" + Sentance[j]);
-                        retval.RelevantInfo = Sentance[j].substring(0,Sentance[j].length()-2);
-                    }
+                       // retval.RelevantInfo = Sentance[j].substring(0,Sentance[j].length()-2);
+                    //}
                 }
                 return retval;
             }
@@ -114,7 +115,7 @@ public class StanfordNLP {
     public static void main(String[] args)
     {
         StanfordNLP N1 = new StanfordNLP();
-        N1.GetInputText("when does packard lab close");
+        N1.GetInputText("when is professor montella office hours");
         NLPinfo info = N1.OutputNLPinfo();
         System.out.println(info.getQuery().toString() + info.RelevantInfo);
 
