@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 capstoneproject\App.class
 capstoneproject\Database$RowData.class
+capstoneproject\SpeechRecognizerMain$1.class
 capstoneproject\WebRunner.class
 capstoneproject\Parser.class
 capstoneproject\AudioPlayer$Status.class
@@ -17,5 +17,3 @@ capstoneproject\QueryRunner.class
 capstoneproject\SpeechRecognizerMain.class
 capstoneproject\TextToSpeech.class
 capstoneproject\DatabaseFiles\DataBaseConnection.class
-=======
->>>>>>> speechtotext

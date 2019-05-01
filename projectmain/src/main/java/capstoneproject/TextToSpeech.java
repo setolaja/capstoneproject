@@ -216,17 +216,17 @@ public class TextToSpeech {
                  */
 
                 response += "Office hours for " + aList.get(0).professorName + " are in " + aList.get(0).buildingName +
-                " in room " + aList.get(0).roomNumber;
-                for(int i = 0; i < aList.size() - 1; i++){
+                " in room number " + aList.get(0).roomNumber;
+                for(int i = 0; i < aList.size(); i++){
                     startT = aList.get(i).startT;
                     endT = aList.get(i).endT;
                     dayOfWeek = aList.get(i).dayOfWeek;
                     //Add data to response
                     if(i == aList.size() -1){
-                        response += " and on " + dayOfWeek + "'s from " + startT + " to " + endT + ".";
+                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ".";
                     }
                     else {
-                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ",";
+                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ", and";
                     }
                 }
 

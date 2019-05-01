@@ -17,7 +17,8 @@ public <constantqueries>  = (what is the time |
 
 public <newscontroller> = (more | next headline | stop);
 
-public <officehours> = (when is professor (Spletzer | Montella) office hours);
+public <professor> = Spletzer | Montella;
+public <officehours> = when is professor <professor> office hours;
 public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
 
 public <dig1> = (one | two | three | four | five | six | seven | eight | nine);
