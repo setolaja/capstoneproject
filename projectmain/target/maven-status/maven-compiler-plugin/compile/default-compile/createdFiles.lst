@@ -1,0 +1,17 @@
+capstoneproject\App.class
+capstoneproject\Database$RowData.class
+capstoneproject\SpeechRecognizerMain$1.class
+capstoneproject\WebRunner.class
+capstoneproject\Parser.class
+capstoneproject\AudioPlayer$Status.class
+capstoneproject\Database.class
+capstoneproject\LocalRunner.class
+capstoneproject\StanfordNLP.class
+capstoneproject\AudioPlayer.class
+capstoneproject\NLPinfo.class
+capstoneproject\SQLRunner.class
+capstoneproject\NLPinfo$Queries.class
+capstoneproject\AbstractRunner.class
+capstoneproject\QueryRunner.class
+capstoneproject\SpeechRecognizerMain.class
+capstoneproject\TextToSpeech.class

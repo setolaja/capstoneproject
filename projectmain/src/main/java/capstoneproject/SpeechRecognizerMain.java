@@ -367,8 +367,10 @@ public class SpeechRecognizerMain {
 
 			nl.GetInputText(speech);
 
-			NLPinfo info = nl.OutputNLPinfo();
-			//info.Query = NLPinfo.Queries.News;
+			//NLPinfo info = nl.OutputNLPinfo();
+			NLPinfo info = new NLPinfo();
+			info.Query = NLPinfo.Queries.OHours;
+			info.RelevantInfo = "Montella";
 			//System.out.println(info1.getQuery());
 	
 			QueryRunner qr = QueryRunner.getInstance();
