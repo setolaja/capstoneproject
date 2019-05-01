@@ -223,7 +223,7 @@ public class Database {
             mSelectBuildingHrs.setString(1,BuildingName);
             ResultSet rs = mSelectBuildingHrs.executeQuery();
             while(rs.next()){
-                res.add(new BuildingData(rs.getString("Building_Name"),rs.getTime("BuildingStartT"),rs.getTime("BuildingEndT")));
+                res.add(new BuildingData(rs.getString("Building_Name"),rs.getTime("BuildingStartT"),rs.getTime("BuildingCloseT")));
             }
         }catch(SQLException e){
             e.printStackTrace();

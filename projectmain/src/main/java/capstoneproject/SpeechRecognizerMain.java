@@ -106,7 +106,7 @@ public class SpeechRecognizerMain {
 		timerFlag = false;
 
 		//news index
-		newsIndex = 0;
+		newsIndex = 1;
 
 		//initialize query response
 		queryResponse = new JSONObject();
@@ -359,7 +359,7 @@ public class SpeechRecognizerMain {
 					tts.speak("Would you like to stop, or hear the next headline?", 2, false, true);
 				}
 				else if (speech.equalsIgnoreCase("stop")) {
-					newsIndex = 0;
+					newsIndex = 1;
 					newsFlag = false;
 				}
 				return;
@@ -367,16 +367,16 @@ public class SpeechRecognizerMain {
 
 			nl.GetInputText(speech);
 
-			//NLPinfo info = nl.OutputNLPinfo();
-			NLPinfo info = new NLPinfo();
-			info.Query = NLPinfo.Queries.OHours;
-			info.RelevantInfo = "Montella";
+			NLPinfo info = nl.OutputNLPinfo();
+			//NLPinfo info = new NLPinfo();
+			//info.Query = NLPinfo.Queries.OHours;
+			//info.RelevantInfo = "Montella";
 			//System.out.println(info1.getQuery());
 	
 			QueryRunner qr = QueryRunner.getInstance();
 	
 			queryResponse = qr.nlpTransform(info);
-			//System.out.println(queryResponse);
+			System.out.println(queryResponse);
 
 			tts.speak(tts.cannedResponse(queryResponse), 2, false, true);
 
