@@ -15,6 +15,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import javax.sound.sampled.AudioInputStream;
+import javax.xml.crypto.Data;
 
 import marytts.LocalMaryInterface;
 import marytts.MaryInterface;
@@ -223,14 +224,20 @@ public class TextToSpeech {
                     dayOfWeek = aList.get(i).dayOfWeek;
                     //Add data to response
                     if(i == aList.size() -1){
-                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ".";
+                        response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ".";
                     }
                     else {
-                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ", and";
+                        response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ", and";
                     }
                 }
 
                 return response;
+            }
+
+            case "buildinghours": {
+                ArrayList<Database.BuildingData> aList = (ArrayList<Database.BuildingData>) query.get("response");
+                response += "The hours for " + aList.get(0).buildingName + " are from " + aList.get(0).startT.toString().substring(0,5) + " to " + aList.get(0).endT.toString().substring(0,5);
+                response += ".";
             }
 
             /**
