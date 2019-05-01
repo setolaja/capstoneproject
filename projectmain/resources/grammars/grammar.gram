@@ -19,7 +19,7 @@ public <newscontroller> = (more | next headline | stop);
 
 public <professor> = (montella | erle);
 public <officehours> = (when is professor <professor> office hours);
-public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
+public <buildinghours> = (when does (packard lab | taylor) close);
 
 public <dig1> = (one | two | three | four | five | six | seven | eight | nine);
 public <digunique> = (ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen);
