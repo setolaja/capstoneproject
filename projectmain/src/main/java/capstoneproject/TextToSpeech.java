@@ -1,8 +1,8 @@
 package capstoneproject;
 
 import java.io.IOException;
-import java.util.Collection;
-import java.util.List;
+import java.sql.Time;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -10,9 +10,7 @@ import java.util.stream.StreamSupport;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.ArrayList;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -146,43 +144,98 @@ public class TextToSpeech {
             return response;
         }
         switch (query.get("type").toString()){
+
+            /**
+             * If the query requested is for weather
+             */
             case "weather": {
                 JSONObject resp = (JSONObject) query.get("response");
                 response = "Right now in " + resp.get("location") + ", it is " + resp.get("temp") + " degrees and there are " + resp.get("weather") + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for flip a coin
+             */
             case "coin": {
                 response = query.get("response") + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for calculator
+             */
             case "calc": {
                 response = query.get("query") + "is" + query.get("response").toString() + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for startup
+             */
             case "startup": {
                 response = query.get("response") + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for what time is it
+             */
             case "time": {
                 response = "The time is " + query.get("response") + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for brief me the news
+             */
             case "news": {
                 String[] responseArray = (String[]) query.get("response");
                 response = responseArray[0] + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for random number
+             */
             case "random": {
                 response = query.get("response").toString() + ".";
                 break;
             }
 
+            /**
+             * If the query requested is for a professors office hours
+             */
+            case "officehours": {
+                Time startT;
+                Time endT;
+                String dayOfWeek;
+                ArrayList<Database.RowData> aList = (ArrayList<Database.RowData>) query.get("response");
+                /**
+                 * Technical debt: building name and room number take from the first row only, so if they change it would let the user know
+                 */
+
+                response += "Office hours for " + aList.get(0).professorName + " are in " + aList.get(0).buildingName +
+                " in room " + aList.get(0).roomNumber;
+                for(int i = 0; i < aList.size() - 1; i++){
+                    startT = aList.get(i).startT;
+                    endT = aList.get(i).endT;
+                    dayOfWeek = aList.get(i).dayOfWeek;
+                    //Add data to response
+                    if(i == aList.size() -1){
+                        response += " and on " + dayOfWeek + "'s from " + startT + " to " + endT + ".";
+                    }
+                    else {
+                        response += " on " + dayOfWeek + "'s from " + startT + " to " + endT + ",";
+                    }
+                }
+
+                return response;
+            }
+
+            /**
+             * If the query requested hasnt been implemented
+             */
             default: {
                 response = "I'm sorry, im not sure how to answer that.";
                 break;
