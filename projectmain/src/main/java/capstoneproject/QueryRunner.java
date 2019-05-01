@@ -30,7 +30,7 @@ public class QueryRunner {
 
     //this is what i'm gonna use
     public JSONObject nlpTransform(NLPinfo input){
-        if(input==null){return null;}
+        if(input==null||input.getQuery()==null){return null;}
         for(int i=0;i<aRlist.length;i++){
             if(aRlist[i].contains(input.getQuery().toString().toLowerCase())){
                 return aRlist[i].response(input);

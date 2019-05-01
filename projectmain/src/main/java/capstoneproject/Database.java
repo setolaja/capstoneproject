@@ -180,7 +180,7 @@ public class Database {
 
     /**
      * TJ Fogarty
-     * Insert a row into the database
+     * gets relevant rows from database
      * 
      * @param ProfessorName professor name passed by Derek
      * 
@@ -205,6 +205,14 @@ public class Database {
         return jsonObject;
     }
 
+    /**
+     * TJ Fogarty
+     * gets relevant rows from database
+     *
+     * @param BuildingName building name passed by Derek
+     *
+     * @return SHOULD BE JSON CHANGE
+     */
     JSONObject getBuilingHours(String BuildingName){
         JSONObject toReturn=new JSONObject();
         toReturn.put("type","buildinghours");
