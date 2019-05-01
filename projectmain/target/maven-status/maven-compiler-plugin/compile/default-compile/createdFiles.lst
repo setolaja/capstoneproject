@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 capstoneproject\App.class
 capstoneproject\Database$RowData.class
 capstoneproject\WebRunner.class
@@ -16,3 +17,5 @@ capstoneproject\QueryRunner.class
 capstoneproject\SpeechRecognizerMain.class
 capstoneproject\TextToSpeech.class
 capstoneproject\DatabaseFiles\DataBaseConnection.class
+=======
+>>>>>>> speechtotext
