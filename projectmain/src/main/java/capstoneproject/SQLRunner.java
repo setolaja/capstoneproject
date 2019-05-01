@@ -36,7 +36,7 @@ public class SQLRunner extends AbstractRunner {
             ArrayList<JSONObject> results = new ArrayList<JSONObject>();
             switch(input.getQuery().toString().toLowerCase()){
                 case "ohours":
-                    toReturn.put("type","ohours");
+                    /*toReturn.put("type","ohours");
                     rs=st.executeQuery(ohQuery+input.RelevantInfo);
                     while(rs.next()){
                         JSONObject res=new JSONObject();
@@ -48,7 +48,9 @@ public class SQLRunner extends AbstractRunner {
                         res.put("day",rs.getString("DayOfWeek"));
                         results.add(res);
                     }
-                    break;
+                    break;*/
+                    Database db = Database.getDatabase();
+                    return db.getOfficeHours(input.RelevantInfo);
                 case "bclose":
                     toReturn.put("type","bclose");
                     rs=st.executeQuery(bhQuery+input.RelevantInfo);//ASSUMING RelevantInfo is a building's name
