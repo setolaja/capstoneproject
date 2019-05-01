@@ -17,13 +17,13 @@ public <constantqueries>  = (what is the time |
 
 public <newscontroller> = (more | next headline | stop);
 
-public <professor> = Spletzer | Montella;
-public <officehours> = when is professor <professor> office hours;
+public <professor> = (montella | erle);
+public <officehours> = (when is professor <professor> office hours);
 public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
 
 public <dig1> = (one | two | three | four | five | six | seven | eight | nine);
 public <digunique> = (ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen);
-public <dig2> = (twenty | thirty | fourty | fifty | sixty | seventy | eighty | ninety);
+public <dig2> = (twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety);
 public <operator> = (plus | minus | divided by | times);
 
 public <calculatorsimple> = ([what is] [<dig1> hundred] [<dig2>] [<dig1>] [digunique] <operator> [<dig1> hundred] [<dig2>] [<dig1>] [digunique]);

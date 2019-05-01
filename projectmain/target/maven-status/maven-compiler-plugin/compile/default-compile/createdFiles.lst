@@ -9,11 +9,17 @@ capstoneproject\LocalRunner.class
 capstoneproject\StanfordNLP.class
 capstoneproject\AudioPlayer.class
 capstoneproject\NLPinfo.class
+<<<<<<< HEAD
 capstoneproject\DatabaseFiles\DatabaseRoutes.class
+=======
+>>>>>>> speechtotext
 capstoneproject\SQLRunner.class
 capstoneproject\NLPinfo$Queries.class
 capstoneproject\AbstractRunner.class
 capstoneproject\QueryRunner.class
 capstoneproject\SpeechRecognizerMain.class
 capstoneproject\TextToSpeech.class
+<<<<<<< HEAD
 capstoneproject\DatabaseFiles\DataBaseConnection.class
+=======
+>>>>>>> speechtotext

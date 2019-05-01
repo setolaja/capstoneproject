@@ -370,7 +370,7 @@ public class SpeechRecognizerMain {
 			//NLPinfo info = nl.OutputNLPinfo();
 			NLPinfo info = new NLPinfo();
 			info.Query = NLPinfo.Queries.OHours;
-			info.RelevantInfo = "Spletzer";
+			info.RelevantInfo = "Montella";
 			//System.out.println(info1.getQuery());
 	
 			QueryRunner qr = QueryRunner.getInstance();

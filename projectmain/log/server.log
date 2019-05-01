@@ -21246,6 +21246,7 @@ Caused by: java.lang.InterruptedException
 2019-04-30 20:13:55,909 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
 2019-04-30 20:13:55,909 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
 2019-04-30 20:13:55,925 [Thread-3] INFO  marytts.main Shutdown complete.
+<<<<<<< HEAD
 2019-04-30 21:20:43,381 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
 2019-04-30 21:20:43,396 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
 2019-04-30 21:20:43,396 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
@@ -23869,3 +23870,1127 @@ Caused by: java.lang.InterruptedException
 2019-04-30 21:54:38,339 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
 2019-04-30 21:54:38,339 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
 2019-04-30 21:54:38,339 [Thread-3] INFO  marytts.main Shutdown complete.
+=======
+2019-04-30 22:08:01,559 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:08:01,559 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:08:01,559 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:08:01,559 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:08:01,762 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:08:01,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:08:01,981 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:08:01,981 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:08:02,043 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:08:02,043 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:08:02,090 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:08:02,106 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:08:02,168 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:08:02,262 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:08:02,262 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:08:02,262 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:08:02,262 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:08:02,262 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:08:02,278 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:08:02,278 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:08:02,278 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:08:02,278 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:08:02,293 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:08:02,309 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:08:02,324 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:08:02,465 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:08:02,465 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:08:02,465 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:08:02,481 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:08:02,481 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:08:02,481 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:08:02,512 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:08:02,512 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:08:02,512 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:08:02,528 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:08:02,528 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:08:02,528 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:08:02,528 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:08:02,559 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:08:02,574 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:08:03,125 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:08:03,125 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:08:03,125 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:08:57,784 [Thread-3] INFO  marytts.main Shutdown complete.
+2019-04-30 22:12:00,717 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:12:00,717 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:12:00,717 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:12:00,717 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:12:00,904 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:12:00,920 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:12:00,921 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:12:00,922 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:12:01,127 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:12:01,127 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:12:01,174 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:12:01,174 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:12:01,221 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:12:01,237 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:12:01,283 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:12:01,393 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:12:01,393 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:12:01,393 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:12:01,393 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:12:01,393 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:12:01,408 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:12:01,408 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:12:01,408 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:12:01,408 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:12:01,408 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:12:01,424 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:12:01,424 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:12:01,424 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:12:01,424 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:12:01,424 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:12:01,440 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:12:01,455 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:12:01,605 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:12:01,605 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:12:01,605 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:12:01,636 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:12:01,636 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:12:01,636 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:12:01,652 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:12:01,652 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:12:01,652 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:12:01,683 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:12:01,683 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:12:01,683 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:12:01,683 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:12:01,699 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:12:01,714 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:12:02,197 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:12:02,197 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:12:02,197 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:12:38,706 [Thread-3] INFO  marytts.main Shutdown complete.
+2019-04-30 22:13:00,763 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:13:00,779 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:13:00,779 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:13:00,779 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:13:00,935 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:13:00,951 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:13:01,170 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:13:01,170 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:13:01,232 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:13:01,232 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:13:01,263 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:13:01,263 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:13:01,263 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:13:01,263 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:13:01,263 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:13:01,279 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:13:01,279 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:13:01,295 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:13:01,342 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:13:01,435 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:13:01,435 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:13:01,435 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:13:01,435 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:13:01,435 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:13:01,451 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:13:01,467 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:13:01,467 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:13:01,467 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:13:01,467 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:13:01,467 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:13:01,484 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:13:01,487 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:13:01,488 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:13:01,488 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:13:01,489 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:13:01,490 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:13:01,490 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:13:01,491 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:13:01,491 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:13:01,492 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:13:01,493 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:13:01,493 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:13:01,494 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:13:01,495 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:13:01,495 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:13:01,496 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:13:01,497 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:13:01,497 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:13:01,498 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:13:01,513 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:13:01,654 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:13:01,654 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:13:01,654 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:13:01,685 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:13:01,685 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:13:01,685 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:13:01,717 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:13:01,717 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:13:01,717 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:13:01,732 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:13:01,732 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:13:01,732 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:13:01,732 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:13:01,763 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:13:01,779 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:13:02,340 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:13:02,340 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:13:02,340 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:13:35,057 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:13:35,072 [Thread-3] INFO  marytts.main Shutdown complete.
+2019-04-30 22:16:20,289 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:16:20,305 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:16:20,305 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:16:20,305 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:16:20,477 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:16:20,492 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:16:20,711 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:16:20,711 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:16:20,778 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:16:20,778 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:16:20,809 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:16:20,825 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:16:20,887 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:16:20,981 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:16:20,981 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:16:20,981 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:16:20,981 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:16:20,981 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:16:20,997 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:16:20,997 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:16:20,997 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:16:21,012 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:16:21,028 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:16:21,044 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:16:21,059 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:16:21,200 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:16:21,200 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:16:21,200 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:16:21,231 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:16:21,231 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:16:21,231 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:16:21,247 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:16:21,247 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:16:21,247 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:16:21,273 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:16:21,273 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:16:21,273 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:16:21,273 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:16:21,304 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:16:21,320 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:16:21,918 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:16:21,918 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:16:21,918 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:18:14,854 [Thread-3] INFO  marytts.main Shutdown complete.
+2019-04-30 22:18:23,103 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:18:23,103 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:18:23,103 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:18:23,103 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:18:23,275 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:18:23,291 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:18:23,510 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:18:23,510 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:18:23,557 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:18:23,557 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:18:23,604 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:18:23,620 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:18:23,666 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:18:23,776 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:18:23,776 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:18:23,776 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:18:23,776 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:18:23,776 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:18:23,791 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:18:23,807 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:18:23,823 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:18:23,838 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:18:23,854 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:18:23,982 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:18:23,982 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:18:23,982 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:18:24,013 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:18:24,013 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:18:24,013 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:18:24,029 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:18:24,029 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:18:24,029 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:18:24,044 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:18:24,044 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:18:24,044 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:18:24,044 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:18:24,076 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:18:24,076 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:18:24,076 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:18:24,076 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:18:24,076 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:18:24,091 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:18:24,591 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:18:24,591 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:18:24,591 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:20:59,257 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:20:59,257 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:20:59,257 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:20:59,258 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:20:59,258 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:20:59,259 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:20:59,260 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:20:59,261 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:20:59,261 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:20:59,264 [Thread-3] INFO  marytts.main Shutdown complete.
+2019-04-30 22:21:44,618 [capstoneproject.App.main()] INFO  marytts.main Mary starting up...
+2019-04-30 22:21:44,618 [capstoneproject.App.main()] INFO  marytts.main Specification version 5.2
+2019-04-30 22:21:44,618 [capstoneproject.App.main()] INFO  marytts.main Implementation version unknown
+2019-04-30 22:21:44,618 [capstoneproject.App.main()] INFO  marytts.main Running on a Java 1.8.0_181 implementation by Oracle Corporation, on a Windows 10 platform (amd64, 10.0)
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2019-04-30 22:21:44,774 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2019-04-30 22:21:44,790 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2019-04-30 22:21:45,044 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2019-04-30 22:21:45,044 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2019-04-30 22:21:45,105 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2019-04-30 22:21:45,105 [capstoneproject.App.main()] INFO  marytts.JPhonemiser User dictionary '.\user-dictionaries\userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.UnitSelectionSynthesizer started.
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2019-04-30 22:21:45,136 [capstoneproject.App.main()] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2019-04-30 22:21:45,152 [capstoneproject.App.main()] INFO  marytts.HMMData Loading Tree Set in CARTs:
+2019-04-30 22:21:45,198 [capstoneproject.App.main()] INFO  marytts.HMMData Loading GV Model Set:
+2019-04-30 22:21:45,292 [capstoneproject.App.main()] INFO  marytts.Voice Registering voice `cmu-slt-hsmm': female, locale en_US
+2019-04-30 22:21:45,292 [capstoneproject.App.main()] INFO  marytts.Voice New default voice for locale en_US: cmu-slt-hsmm (desire 0)
+2019-04-30 22:21:45,292 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer started.
+2019-04-30 22:21:45,292 [capstoneproject.App.main()] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2019-04-30 22:21:45,292 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2019-04-30 22:21:45,308 [capstoneproject.App.main()] INFO  marytts.HTSEngine Using prosody from acoustparams.
+2019-04-30 22:21:45,308 [capstoneproject.App.main()] INFO  marytts.HTSEngine Number of models in sentence numModel=7  Total number of states numState=35
+2019-04-30 22:21:45,308 [capstoneproject.App.main()] INFO  marytts.HTSEngine Total number of frames=147  Number of voiced frames=89
+2019-04-30 22:21:45,308 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Parameter generation for MGC: 
+2019-04-30 22:21:45,308 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=23
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=54
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=38
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=20
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=13
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (5)  number of iterations=21
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (6)  number of iterations=7
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (7)  number of iterations=4
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (8)  number of iterations=11
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (9)  number of iterations=19
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (10)  number of iterations=16
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (11)  number of iterations=9
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (12)  number of iterations=2
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (13)  number of iterations=13
+2019-04-30 22:21:45,323 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (14)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (15)  number of iterations=14
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (16)  number of iterations=15
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (17)  number of iterations=14
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (18)  number of iterations=19
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (19)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (20)  number of iterations=17
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (21)  number of iterations=23
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (22)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (23)  number of iterations=18
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (24)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (25)  number of iterations=11
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (26)  number of iterations=13
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (27)  number of iterations=9
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (28)  number of iterations=13
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (29)  number of iterations=8
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (30)  number of iterations=11
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (31)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (32)  number of iterations=7
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (33)  number of iterations=8
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (34)  number of iterations=12
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.ParameterGeneration Using f0 from maryXML acoustparams
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Context-dependent global variance optimization: gvLength = 107
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (0)  number of iterations=16
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (1)  number of iterations=2
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (2)  number of iterations=2
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (3)  number of iterations=8
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.PStream Gradient GV optimization for feature: (4)  number of iterations=26
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.HMMSynthesizer Power-on self test complete.
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Starting power-on self test.
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] WARN  marytts.TextToMaryXML Locale is null, overriding with en_US
+2019-04-30 22:21:45,339 [capstoneproject.App.main()] INFO  marytts.TextToMaryXML Power-on self test complete.
+2019-04-30 22:21:45,495 [capstoneproject.App.main()] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2019-04-30 22:21:45,495 [capstoneproject.App.main()] INFO  marytts.SableParser Starting power-on self test.
+2019-04-30 22:21:45,495 [capstoneproject.App.main()] INFO  marytts.SableParser Power-on self test complete.
+2019-04-30 22:21:45,511 [capstoneproject.App.main()] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2019-04-30 22:21:45,511 [capstoneproject.App.main()] INFO  marytts.SSMLParser Starting power-on self test.
+2019-04-30 22:21:45,511 [capstoneproject.App.main()] INFO  marytts.SSMLParser Power-on self test complete.
+2019-04-30 22:21:45,542 [capstoneproject.App.main()] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2019-04-30 22:21:45,542 [capstoneproject.App.main()] INFO  marytts.APMLParser Starting power-on self test.
+2019-04-30 22:21:45,542 [capstoneproject.App.main()] INFO  marytts.APMLParser Power-on self test complete.
+2019-04-30 22:21:45,558 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2019-04-30 22:21:45,558 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Starting power-on self test.
+2019-04-30 22:21:45,558 [capstoneproject.App.main()] INFO  marytts.EmotionmlParser Power-on self test complete.
+2019-04-30 22:21:45,558 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.AcousticModeller Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Realised durations extractor Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Module started (REALISED_ACOUSTPARAMS->PRAAT_TEXTGRID, locale null).
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2019-04-30 22:21:45,589 [capstoneproject.App.main()] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JTokeniser Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JTokeniser Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Preprocess Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Preprocess Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.JPhonemiser Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Prosody Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.Prosody Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Starting power-on self test.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.PronunciationModel Power-on self test complete.
+2019-04-30 22:21:45,605 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2019-04-30 22:21:46,138 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2019-04-30 22:21:46,138 [capstoneproject.App.main()] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2019-04-30 22:21:46,138 [capstoneproject.App.main()] INFO  marytts.main Startup complete.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.main Shutting down modules...
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Synthesis Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.TextToMaryXML Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.SableParser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.SSMLParser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.APMLParser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.EmotionmlParser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.DummyTokens2Words Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.TargetFeatureLister Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.AcousticModeller Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Realised acoustparams extractor Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Realised durations extractor Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.HTSEngine Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Praat TextGrid generator Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.JTokeniser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Preprocess Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.JPhonemiser Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.Prosody Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.SimplePhoneme2AP Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.PronunciationModel Module shut down.
+2019-04-30 22:22:24,560 [Thread-3] INFO  marytts.OpenNLPPosTagger Module shut down.
+2019-04-30 22:22:24,575 [Thread-3] INFO  marytts.main Shutdown complete.
+>>>>>>> speechtotext
