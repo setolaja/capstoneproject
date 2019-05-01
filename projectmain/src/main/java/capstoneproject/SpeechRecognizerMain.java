@@ -6,6 +6,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Port;
@@ -52,10 +54,11 @@ public class SpeechRecognizerMain {
 	 */
 	private boolean resourcesThreadRunning;
 
-	//Checks to see if wake word or stop word has been said
+	//Flags
 	private boolean wakeFlag;
 	private boolean stopFlag;
 	private boolean newsFlag;
+	private boolean timerFlag;
 
 	//News looping index
 	private int newsIndex;
@@ -66,6 +69,10 @@ public class SpeechRecognizerMain {
 	//Class declarations
 	private StanfordNLP nl;
 	private TextToSpeech tts;
+
+	//Timer vars
+	private Timer timer;
+	private TimerTask task;
 	
 	/**
 	 * This executor service is used in order the playerState events to be executed in an order
@@ -96,9 +103,16 @@ public class SpeechRecognizerMain {
 		wakeFlag = false;
 		stopFlag = false;
 		newsFlag = false;
+		timerFlag = false;
 
 		//news index
 		newsIndex = 0;
+
+		//initialize query response
+		queryResponse = new JSONObject();
+
+		//initialize timer variables
+		timer = new Timer();
 		
 		// Load model from the jar
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
@@ -283,54 +297,86 @@ public class SpeechRecognizerMain {
 	 * @param speechWords
 	 */
 	public void makeDecision(String speech , List<WordResult> speechWords) {
-		//for (int i = 0; i < speechWords.size(); i++) {
-		//	System.out.println(speechWords.get(i));
-		//}
+
 		if (speech.equalsIgnoreCase("stop listening")) {
 			speechRecognizerThreadRunning = false;
 		}
+
 		else if (speech.equalsIgnoreCase("<unk>")) {
 			tts.speak("Im sorry I did not understand the question, can you repeat it?", 2, false, true);
 		}
+
 		else if (speech.equalsIgnoreCase("hey lehigh")) {
 			//do nothing
 		}
-		else {
 
+		else if (speech.equalsIgnoreCase("set a timer")) {
+			tts.speak("How many seconds do you want to set the timer for?", 2, false, true);
+			timerFlag = true;
+		}
+
+		else if (timerFlag) {
+			int val = 0;
+			if (speech.equalsIgnoreCase("one"))
+				val = 1;
+			else if (speech.equalsIgnoreCase("two"))
+				val = 2;
+			else if (speech.equalsIgnoreCase("three"))
+				val = 3;
+			else if (speech.equalsIgnoreCase("four"))
+				val = 4;
+			else if (speech.equalsIgnoreCase("five"))
+				val = 5;
+			else if (speech.equalsIgnoreCase("six"))
+				val = 6;
+			else if (speech.equalsIgnoreCase("seven"))
+				val = 7;
+			else if (speech.equalsIgnoreCase("eight"))
+				val = 8;
+			else if (speech.equalsIgnoreCase("nine"))
+				val = 9;
+			else if (speech.equalsIgnoreCase("ten"))
+				val = 10;
+			setTimer();
+			timer.schedule(task, val*1000);
+			timerFlag = false;
+			wakeFlag = false;
+			tts.speak("Okay, your timer is set.", 2, false, true);
+		}
+
+		else {
 			if (newsFlag) {
-				if (speech.equalsIgnoreCase("next")) {
+				if (speech.equalsIgnoreCase("next headline")) {
 					String[] responseArray = (String[]) queryResponse.get("response");
-					newsIndex++;
+					if (newsIndex < 5)
+						newsIndex++;
 					tts.speak(responseArray[newsIndex], 2, false, true);
 					tts.speak("Would you like to hear more, or hear the next headline?", 2, false, true);
-					// next headline
 				}
 				else if (speech.equalsIgnoreCase("more")) {
 					String[] responseArray = (String[]) queryResponse.get("description");
 					tts.speak(responseArray[newsIndex], 2, false, true);
-					tts.speak("Would you like to hear more, or hear the next headline?", 2, false, true);
-					// elaborate on headline
-					// would you like to hear more / next
+					tts.speak("Would you like to stop, or hear the next headline?", 2, false, true);
 				}
 				else if (speech.equalsIgnoreCase("stop")) {
 					newsIndex = 0;
 					newsFlag = false;
-					// stop
 				}
 				return;
 			}
 
 			nl.GetInputText(speech);
-	
+
 			NLPinfo info = nl.OutputNLPinfo();
-			System.out.println(info.getQuery());
+			//info.Query = NLPinfo.Queries.News;
+			//System.out.println(info1.getQuery());
 	
 			QueryRunner qr = QueryRunner.getInstance();
 	
 			queryResponse = qr.nlpTransform(info);
-			System.out.println(queryResponse);
+			//System.out.println(queryResponse);
 
-			tts.speak(tts.cannedResponse(queryResponse),2,false,true);
+			tts.speak(tts.cannedResponse(queryResponse), 2, false, true);
 
 			wakeFlag = false;
 
@@ -352,5 +398,13 @@ public class SpeechRecognizerMain {
 	
 	public String getSpeechRecognitionResult() {
 		return speechRecognitionResult;
+	}
+
+	public void setTimer() {
+		task = new TimerTask() {
+			public void run() {
+				tts.speak("Time is up.", 2, false, true);
+			}
+		};
 	}
 }
