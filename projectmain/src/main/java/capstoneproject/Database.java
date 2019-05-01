@@ -142,7 +142,7 @@ public class Database {
                     "FROM officehour NATURAL JOIN building NATURAL JOIN professor " +
                     "WHERE P_name = ?");
             db.mSelectOne = db.mConnection.prepareStatement("SELECT * FROM messageData");
-            db.mSelectBuildingHrs = db.mConnection.prepareStatement("SELECT * FROM building");
+            db.mSelectBuildingHrs = db.mConnection.prepareStatement("SELECT * FROM building WHERE Building_Name = ?");
 
         } catch (SQLException e) {
             System.err.println("Error creating prepared statement");
