@@ -1,6 +1,7 @@
 package capstoneproject;
 public class NLPinfo {
 
+
     //our 10 Querries
     enum Queries {
         Weather,
