@@ -14,9 +14,14 @@ public class Database {
     private Connection mConnection;
 
     /**
-     * A prepared statement for getting all data in the database
+     * A prepared statement for getting professor's office hours
      */
     private PreparedStatement mSelectOfficeHrs;
+
+    /**
+     * A prepared statement for getting building's hours
+     */
+    private PreparedStatement mSelectBuildingHrs;
 
     /**
      * A prepared statement for getting one row from the database
@@ -78,6 +83,18 @@ public class Database {
         }
     }
 
+    public static class BuildingData{
+        String buildingName;
+        Time startT;
+        Time endT;
+
+        public BuildingData(String name, Time start, Time end){
+            buildingName=name;
+            startT=start;
+            endT=end;
+        }
+    }
+
     /**
      * The Database constructor is private: we only create Database objects 
      * through the getDatabase() method.
@@ -88,11 +105,11 @@ public class Database {
     /**
      * Get a fully-configured connection to the database
      * 
-     * @param ip   The IP address of the database server
-     * @param port The port on the database server to which connection requests
+     *  ip   The IP address of the database server
+     *  port The port on the database server to which connection requests
      *             should be sent
-     * @param user The user ID to use when connecting
-     * @param pass The password to use when connecting
+     *  user The user ID to use when connecting
+     *  pass The password to use when connecting
      * 
      * @return A Database object, or null if we cannot connect properly
      */
@@ -125,6 +142,7 @@ public class Database {
                     "FROM officehour NATURAL JOIN building NATURAL JOIN professor " +
                     "WHERE P_name = ?");
             db.mSelectOne = db.mConnection.prepareStatement("SELECT * FROM messageData");
+            db.mSelectBuildingHrs = db.mConnection.prepareStatement("SELECT * FROM building");
 
         } catch (SQLException e) {
             System.err.println("Error creating prepared statement");
@@ -185,6 +203,25 @@ public class Database {
         jsonObject.put("response", res);
 
         return jsonObject;
+    }
+
+    JSONObject getBuilingHours(String BuildingName){
+        JSONObject toReturn=new JSONObject();
+        toReturn.put("type","buildinghours");
+
+        ArrayList<BuildingData> res = new ArrayList<BuildingData>();
+
+        try{
+            mSelectBuildingHrs.setString(1,BuildingName);
+            ResultSet rs = mSelectBuildingHrs.executeQuery();
+            while(rs.next()){
+                res.add(new BuildingData(rs.getString("Building_Name"),rs.getTime("BuildingStartT"),rs.getTime("BuildingEndT")));
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        toReturn.put("response",res);
+        return toReturn;
     }
 
 //    /**
