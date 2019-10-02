@@ -1,0 +1,71 @@
+hello
+how are you
+do you know
+get
+can you give me the time
+what is the time
+can you give me the weather
+what is the weather
+can you give me a random number
+give me a random number
+what is the news
+whats happening in the news
+brief me the news
+calculator
+open the calculator
+can you flip me a coin
+flip a coin
+can you set me a timer
+set me a timer
+set a timer
+more
+next headline
+stop
+when is professor
+Montella
+Erle
+office hours
+when does
+when is
+steps
+taylor
+packard
+williams
+close
+open
+open until
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+thirteen
+fourteen
+fifteen
+sixteen
+seventeen
+eighteen
+nineteen
+twenty
+thirty
+forty
+fifty
+sixty
+seventy
+eighty
+ninety
+hundred
+plus
+minus
+divided by
+times
+square root
+hey lehigh
+stop listening

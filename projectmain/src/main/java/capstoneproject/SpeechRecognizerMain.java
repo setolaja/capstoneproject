@@ -116,14 +116,16 @@ public class SpeechRecognizerMain {
 		
 		// Load model from the jar
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
-		configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
+		//configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
+		configuration.setDictionaryPath("./resources/languagemodel/8180.dic");
 		
 		//====================================================================================
 		//=====================READ THIS!!!===============================================
 		//Uncomment this line of code if you want the recognizer to recognize every word of the language 
 		//you are using , here it is English for example	
 		//====================================================================================
-		//configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
+		configuration.setLanguageModelPath("./resources/languagemodel/8180.lm");
+		
 		
 		//====================================================================================
 		//=====================READ THIS!!!===============================================
@@ -131,9 +133,9 @@ public class SpeechRecognizerMain {
 		//====================================================================================
 		
 		// Grammar
-		configuration.setGrammarPath("./resources/grammars");
-		configuration.setGrammarName("grammar");
-		configuration.setUseGrammar(true);
+		//configuration.setGrammarPath("./resources/grammars");
+		//configuration.setGrammarName("grammar");
+		//configuration.setUseGrammar(true);
 		
 		try {
 			recognizer = new LiveSpeechRecognizer(configuration);
@@ -200,6 +202,7 @@ public class SpeechRecognizerMain {
 								//Get the hypothesis
 								speechRecognitionResult = speechResult.getHypothesis();
 
+								wakeFlag = true;
 								//Check if input is wake word or stop word
 								if (speechRecognitionResult.equals("hey lehigh")) {
 									System.out.println("Wake word detected.");
@@ -215,7 +218,7 @@ public class SpeechRecognizerMain {
 								if (wakeFlag || stopFlag) {
 									System.out.println("You said: [" + speechRecognitionResult + "]\n");
 
-									makeDecision(speechRecognitionResult, speechResult.getWords());
+									//makeDecision(speechRecognitionResult, speechResult.getWords());
 								}
 
 							}
