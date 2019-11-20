@@ -2,10 +2,16 @@
 <html>
   <head>
     <title>GTmetrix Analyzer</title>
-    <script src="popup.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
   </head>
   <body>
     <h1>Hey, Lehigh!</h1>
-    <button id="checkPage">Ask a question!</button>
+    <form>
+      Ask a Question:<br>
+      <input id="input_text" type="text" name="question">
+      <br><br>
+    </form>
+    <input type="button" value="Send Stuff" id="myButton" >
   </body>
 </html>

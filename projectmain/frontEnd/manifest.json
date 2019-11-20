@@ -4,7 +4,8 @@
     "name": "Hey, Lehigh!",
     "description": "The personal voice assistant for Lehigh University",
     "version": "1.0",
-  
+    "content_security_policy": "script-src 'self' http://localhost:4567/ ; object-src 'self'; style-src 'unsafe-inline'",
+    
     "browser_action": {
      "default_icon": "lehighIcon.png",
      "default_popup": "popup.html"
