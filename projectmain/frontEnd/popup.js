@@ -36,6 +36,62 @@ $(document).ready(function(){
 
     });
   });
+
+  $("#permissionButton").click(function() {
+    window.open("permission.html");
+  });
+
+
+  $("#listenButton").click(function() {
+    window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+    console.log("Listen button clicked");
+    if ('SpeechRecognition' in window) {
+      // speech recognition API supported
+      console.log("Speech Recognition Supported!");
+    } else {
+      // speech recognition API not supported
+      console.log("Speech Recognition Not Supported!");
+    }
+    
+    const recognition = new window.SpeechRecognition();
+
+    //recognition.continuous = true;
+
+    //console.log(recognition);
+
+    recognition.onresult = (event) => {
+      const speechToText = event.results[0][0].transcript;
+
+
+
+      $.post("http://localhost:4567/query",
+      {
+        input_text: speechToText
+      },
+      function(data,status){
+        //call new pop up html
+        //alert(data);
+        var retString = cannedResponse(data);
+        var response = new SpeechSynthesisUtterance(retString);
+        window.speechSynthesis.speak(response);
+        alert(retString);
+        
+        if(data.response!=null && status=="Success"){
+          var start_div = document.getElementById('start');
+          //make a new Div element
+          var newElement = document.createElement('div');
+          //add text to that div
+          newElement.innerHTML = data.repsonse;
+          //append it to the main 
+          start_div.appendChild(newElement);
+        }
+      });
+
+
+      console.log(speechToText);
+    }
+    recognition.start();
+  });
   
 });
 var cannedResponse = function(oldquery){

@@ -1,0 +1,1 @@
+navigator.webkitGetUserMedia({ audio: true }, s => {console.log("success")}, err => {console.log("error")});
