@@ -230,6 +230,7 @@ public class TextToSpeech {
                         response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ", and";
                     }
                 }
+                String[] params = new String[3];
 
                 return response;
             }

@@ -120,13 +120,14 @@ public class StanfordNLP {
     public static boolean isCalc(List<String> POS)
     {
 
+
         return true;
     }
 
     public static void main(String[] args)
     {
         StanfordNLP N1 = new StanfordNLP();
-        N1.GetInputText("when does williams close");
+        N1.GetInputText("when is professor montella office hour");
         NLPinfo info = N1.OutputNLPinfo();
         System.out.println(info.getQuery().toString() + info.RelevantInfo);
 
