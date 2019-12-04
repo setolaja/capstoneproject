@@ -70,8 +70,6 @@ $(document).ready(function(){
     recognition.onresult = (event) => {
       const speechToText = event.results[0][0].transcript;
 
-
-
       $.post("http://localhost:4567/query",
       {
         input_text: speechToText
@@ -178,6 +176,18 @@ var cannedResponse = function(query){
             break;
         }
 
+        case "timer":{
+            var secs = 0;
+            var duration = query.seconds;
+            var id = setInterval(function(){ 
+                secs++; console.log(secs);
+            if(secs> 5){
+                clearInterval(id);
+                alert('Total Time: ' + secs + ' seconds');
+            }
+            }, 1000);
+        }
+
         /**
          * If the query requested is for a professors office hours
          */
@@ -212,12 +222,37 @@ var cannedResponse = function(query){
             // return response;
         }
 
-        // case "buildinghours": {
-        //     ArrayList<Database.BuildingData> aList = (ArrayList<Database.BuildingData>) query.get("response");
-        //     response += "The hours for " + aList.get(0).buildingName + " are from " + aList.get(0).startT.toString().substring(0,5) + " to " + aList.get(0).endT.toString().substring(0,5);
-        //     response += ".";
-        //     return response;
-        // }
+        case "buildinghours": {
+            response += query.response;
+            break;
+            // ArrayList<Database.BuildingData> aList = (ArrayList<Database.BuildingData>) query.get("response");
+            // response += "The hours for " + aList.get(0).buildingName + " are from " + aList.get(0).startT.toString().substring(0,5) + " to " + aList.get(0).endT.toString().substring(0,5);
+            // response += ".";
+            // return response;
+        }
+        
+        case "gpa": {
+            response += "Your GEE PEE AY is " + query.response;
+            break;
+        }
+
+        case "lin": {
+            response += "Your LIN is " + query.response;
+            break;
+        }
+
+        case "schedule": {
+            response += "This semester, you are taking ";
+            for(var i = 0; i < query.response.length; i++){
+                if(i == query.response.length - 1){
+                    response += " and " + query.response[i];       
+                }
+                else{
+                    response += query.response[i];
+                }
+            }
+            break;
+        }
 
         /**
          * If the query requested hasnt been implemented
