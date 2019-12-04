@@ -1,11 +1,11 @@
 $(document).ready(function(){
-  $('#myButton').keydown(function() {
-    var key = e.which;
-    if (key == 13) {
-    // As ASCII code for ENTER key is "13"
-    $('#myButton').submit(); // Submit form code
-    }
-  });
+//   $('#myButton').keydown(function() {
+//     var key = e.which;
+//     if (key == 13) {
+//     // As ASCII code for ENTER key is "13"
+//     $('#myButton').submit(); // Submit form code
+//     }
+//   });
   $("#myButton").click(function(){
     //var bla = $('#input_text').val();
     // alert(bla);
@@ -17,20 +17,20 @@ $(document).ready(function(){
     function(data,status){
       //call new pop up html
       //alert(data);
-      var retString = cannedResponse(data);
-      var response = new SpeechSynthesisUtterance(retString);
-      window.speechSynthesis.speak(response);
-      alert(retString);
-      
-      if(data.response!=null && status=="Success"){
-        var start_div = document.getElementById('start');
-        //make a new Div element
-        var newElement = document.createElement('div');
-        //add text to that div
-        newElement.innerHTML = data.repsonse;
-        //append it to the main 
-        start_div.appendChild(newElement);
+      if(data == null){
+        var def = "I'm sorry, im not sure how to answer that.";
+        var speech = new SpeechSynthesisUtterance(def);
+        window.speechSynthesis.speak(speech);
       }
+      else{
+        var retString = cannedResponse(data);
+        //produces text to speech
+        var response = new SpeechSynthesisUtterance(retString);
+        window.speechSynthesis.speak(response);
+        alert(retString);
+      }
+      //$('.ui.basic.modal').modal('show');
+      
       //alert('Hello, World!'); 
       
 
@@ -52,8 +52,14 @@ var cannedResponse = function(oldquery){
          * If the query requested is for weather
          */
         case "weather": {
+            if(query.response.weather.toLowerCase() == "clear")
+            {
+                var r = query.response;
+                response = "Right now in " + r.location + ", it is " + r.temp+ " degrees and the sky is clear";
+                break;
+            }
             var resp =  query.response;
-            response = "Right now in " + resp.location + ", it is " + resp.temp + " degrees and there are " + resp.weather + ".";
+            response = "Right now in " + resp.location + ", it is " + resp.temp + " degrees and there is " + resp.weather + ".";
             break;
         }
 
