@@ -19,15 +19,15 @@ public <newscontroller> = (more | next headline | stop);
 
 public <professor> = (montella | erle);
 public <officehours> = (when is professor <professor> office hours);
-public <buildinghours> = (when does (williams | packard lab | linderman | taylor gym) close);
+public <buildinghours> = (when does (taylor | steps) close);
 
-public <dig1> = (one | two | three | four | five | six | seven | eight | nine);
-public <digunique> = (ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen);
-public <dig2> = (twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety);
-public <operator> = (plus | minus | divided by | times);
+public <dig1> = (one | two | three | four | five | six | seven | eight | nine | ten);
+//public <digunique> = (ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen);
+//public <dig2> = (twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety);
+//public <operator> = (plus | minus | divided by | times);
 
-public <calculatorsimple> = ([what is] [<dig1> hundred] [<dig2>] [<dig1>] [digunique] <operator> [<dig1> hundred] [<dig2>] [<dig1>] [digunique]);
-public <calculatorcomplex> = ([what is] [the square root of ] [<dig1> hundred] [<dig2>] [<dig1>] [digunique] [squared]);
+//public <calculatorsimple> = ([what is] [<dig1> hundred] [<dig2>] [<dig1>] [digunique] <operator> [<dig1> hundred] [<dig2>] [<dig1>] [digunique]);
+//public <calculatorcomplex> = ([what is] [the square root of ] [<dig1> hundred] [<dig2>] [<dig1>] [digunique] [squared]);
 
 public <wakewords> = (hey lehigh);
 public <stopwords> = (stop listening);

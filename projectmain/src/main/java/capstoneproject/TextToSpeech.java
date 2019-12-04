@@ -192,7 +192,7 @@ public class TextToSpeech {
              */
             case "news": {
                 String[] responseArray = (String[]) query.get("response");
-                response = responseArray[0] + ".";
+                response = responseArray[1] + ".";
                 break;
             }
 
@@ -239,6 +239,7 @@ public class TextToSpeech {
                 ArrayList<Database.BuildingData> aList = (ArrayList<Database.BuildingData>) query.get("response");
                 response += "The hours for " + aList.get(0).buildingName + " are from " + aList.get(0).startT.toString().substring(0,5) + " to " + aList.get(0).endT.toString().substring(0,5);
                 response += ".";
+                return response;
             }
 
             /**
