@@ -6,6 +6,8 @@ $(document).ready(function(){
 //     $('#myButton').submit(); // Submit form code
 //     }
 //   });
+
+
   $("#myButton").click(function(){
     //var bla = $('#input_text').val();
     // alert(bla);
@@ -35,6 +37,12 @@ $(document).ready(function(){
       
 
     });
+  });
+
+  $("#infoButton").click(function(){
+    var queryList = "Hey Lehigh\nWhat is the time?\nWhat is the weather?\nFlip a coin\nSet a Timer\n"+
+    "When is professor X's office hours?\nGive me a random number\nBrief me the news\nWhen is building X open?";
+    window.alert(queryList);
   });
 
   $("#permissionButton").click(function() {
@@ -71,20 +79,24 @@ $(document).ready(function(){
       function(data,status){
         //call new pop up html
         //alert(data);
-        var retString = cannedResponse(data);
+        var query = JSON.parse(data);// parse json
+        var retString = "";
+
+        retString = cannedResponse(query);
         var response = new SpeechSynthesisUtterance(retString);
         window.speechSynthesis.speak(response);
         alert(retString);
+
         
-        if(data.response!=null && status=="Success"){
-          var start_div = document.getElementById('start');
-          //make a new Div element
-          var newElement = document.createElement('div');
-          //add text to that div
-          newElement.innerHTML = data.repsonse;
-          //append it to the main 
-          start_div.appendChild(newElement);
-        }
+        // if(data.response!=null && status=="Success"){
+        //   var start_div = document.getElementById('start');
+        //   //make a new Div element
+        //   var newElement = document.createElement('div');
+        //   //add text to that div
+        //   newElement.innerHTML = data.repsonse;
+        //   //append it to the main 
+        //   start_div.appendChild(newElement);
+        // }
       });
 
 
@@ -94,11 +106,10 @@ $(document).ready(function(){
   });
   
 });
-var cannedResponse = function(oldquery){
-    var query = JSON.parse(oldquery);
-    
+//var newsCount = 0;
+var cannedResponse = function(query){
     var response = "";
-    if(query == null){
+    if(query.type.toString() == "empty"){
         response += "I'm sorry, im not sure how to answer that.";
         return response;
     }
@@ -155,8 +166,7 @@ var cannedResponse = function(oldquery){
          * If the query requested is for brief me the news
          */
         case "news": {
-            var responseArray = query.response;
-            response = responseArray[1] + ".";
+            response = query.title[0] + ". Next story. " + query.title[1];
             break;
         }
 
@@ -171,32 +181,36 @@ var cannedResponse = function(oldquery){
         /**
          * If the query requested is for a professors office hours
          */
-        // case "officehours": {
-        //     Time startT;
-        //     Time endT;
-        //     String dayOfWeek;
-        //     ArrayList<Database.RowData> aList = (ArrayList<Database.RowData>) query.get("response");
-        //     /**
-        //      * Technical debt: building name and room number take from the first row only, so if they change it would let the user know
-        //      */
+        case "officehours": {
+            response = query.response;
+            break;
 
-        //     response += "Office hours for " + aList.get(0).professorName + " are in " + aList.get(0).buildingName +
-        //     " in room number " + aList.get(0).roomNumber;
-        //     for(int i = 0; i < aList.size(); i++){
-        //         startT = aList.get(i).startT;
-        //         endT = aList.get(i).endT;
-        //         dayOfWeek = aList.get(i).dayOfWeek;
-        //         //Add data to response
-        //         if(i == aList.size() -1){
-        //             response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ".";
-        //         }
-        //         else {
-        //             response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ", and";
-        //         }
-        //     }
 
-        //     return response;
-        // }
+            // Time startT;
+            // Time endT;
+            // String dayOfWeek;
+            // ArrayList<Database.RowData> aList = (ArrayList<Database.RowData>) query.get("response");
+            // /**
+            //  * Technical debt: building name and room number take from the first row only, so if they change it would let the user know
+            //  */
+
+            // response += "Office hours for " + aList.get(0).professorName + " are in " + aList.get(0).buildingName +
+            // " in room number " + aList.get(0).roomNumber;
+            // for(int i = 0; i < aList.size(); i++){
+            //     startT = aList.get(i).startT;
+            //     endT = aList.get(i).endT;
+            //     dayOfWeek = aList.get(i).dayOfWeek;
+            //     //Add data to response
+            //     if(i == aList.size() -1){
+            //         response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ".";
+            //     }
+            //     else {
+            //         response += " on " + dayOfWeek + "'s from " + startT.toString().substring(0,5) + " to " + endT.toString().substring(0,5) + ", and";
+            //     }
+            // }
+
+            // return response;
+        }
 
         // case "buildinghours": {
         //     ArrayList<Database.BuildingData> aList = (ArrayList<Database.BuildingData>) query.get("response");
@@ -217,3 +231,17 @@ var cannedResponse = function(oldquery){
     return response;
 
 }
+// var nestedQueryResponse = function(query){
+//     var counter = 0;
+//     var retString = "";
+//     //assume news for now, implement switch if more nested queries are used
+//     retString = query.title.one;
+
+
+//     // switch(query.type.toString()){
+//     //     case "news":
+//     //         retString = 
+//     // }
+//     var response = new SpeechSynthesisUtterance(retString);
+    
+// }
